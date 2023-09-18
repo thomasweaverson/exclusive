@@ -1,0 +1,57 @@
+.section-month {
+  max-width: 1170px;
+  margin: 70px auto 140px auto;
+}
+
+
+/*!month__header_grid*/
+.section-month__header_grid {
+  display: grid;
+  grid-template-columns: 401px 1fr;
+}
+
+.section-month .section-month__header_grid .red-btn {
+  width: 159px;
+  align-self: end;
+  justify-self: end;
+}
+
+/*!today__header_grid END*/
+
+/*!this month products*/
+.section-month .product__discount {
+  display: none;
+}
+
+.section-month .goods_container {
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/*!this month products END*/
+
+
+
+
+
+
+/*!media  from 640px to (max-width: 1200px)*/
+@media screen and (min-width: 640px) and (max-width: 1200px) {
+  .section-month {
+    padding-left: 10px;
+  }
+}
+
+/*!media  (max-width: 639px)*/
+@media screen and (max-width: 639px) {
+  .section-month {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .section-month__header_grid {
+    grid-template-columns: 1fr;
+  }
+
+}

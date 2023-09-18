@@ -1,0 +1,353 @@
+/*!Карточка продукта*/
+
+.product {
+  width: 270px;
+  flex-shrink: 0;
+}
+
+.product__card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+
+}
+
+/*!Расстановка стикеров на фото продукта*/
+.product__card_grid {
+  position: absolute;
+  width: 246px;
+  height: 76px;
+  top: 12px;
+  left: 12px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.product__discount,
+.product__new {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  width: fit-content;
+  height: fit-content;
+
+  padding: 4px 12px;
+  background-color: #DB4444;
+  border-radius: 4px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fafafa;
+
+  z-index: 1;
+}
+
+.product__new {
+  background-color: #00FF66;
+  padding: 4px 12.5px;
+
+}
+
+
+.product__card:hover .product__discount {
+  animation: 1.2s ease-in-out 0s normal none running trambling-animation;
+}
+
+@keyframes trambling-animation {
+
+  0%,
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  10%,
+  30% {
+    transform: rotate(-2deg);
+  }
+
+  20%,
+  40% {
+    transform: rotate(2deg);
+  }
+}
+
+
+
+
+.product__wishlist {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: end;
+  background: no-repeat center url(../img/product_wishlist.svg);
+  background-color: #FFFFFF;
+
+  width: 34px;
+  height: 34px;
+  padding: 5px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  z-index: 2;
+
+}
+
+
+.product__wishlist:hover {
+  box-shadow: 0px 0px 8px -3px #DB4444;
+}
+
+.product__wishlist:active {
+  transform: scale(0.95);
+}
+
+.product__wishlist.product__wishlist_fix {
+  background: no-repeat center url(../img/product_wishlist_fix.svg);
+  background-color: #fff;
+}
+
+
+
+.product__details {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: end;
+  align-self: end;
+
+  background-color: #FFFFFF;
+  width: 34px;
+  height: 34px;
+  padding: 5px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.product__details:hover {
+  box-shadow: 0px 0px 8px -3px #DB4444;
+}
+
+.product__details:active {
+  transform: scale(0.95);
+}
+
+
+
+.product__add-to-cart {
+  display: none;
+  position: absolute;
+  width: 270px;
+  height: 41px;
+  border-radius: 0px 0px 4px 4px;
+  bottom: 0px;
+  background-color: #000;
+  color: #fafafa;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 8.5px;
+
+  z-index: 1;
+
+  cursor: pointer;
+}
+
+.product__card:hover .product__add-to-cart {
+  display: block;
+}
+
+/*!Расстановка стикеров на фото продукта END*/
+
+/*!Установка фотографии продукта внутри карточки*/
+.product__photo img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*!Расстановка фотографии продукта внутри карточки END*/
+
+/*!Description under product-card*/
+.product__description {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product__name {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.product__prices {
+  display: flex;
+  gap: 12px;
+
+  margin: 0;
+}
+
+.product__prices_current {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #DB4444;
+}
+
+.product__prices_old {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  color: #0000007f;
+  text-decoration: line-through;
+}
+
+.product__rating {
+  display: flex;
+  gap: 8px;
+  height: 20px;
+  align-items: end;
+
+  margin: 0;
+}
+
+.product__rating_stars {
+  height: 20px;
+  display: flex;
+  align-items: end;
+}
+
+.product__rating_reviews {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+
+  opacity: 50%;
+}
+
+/*!Description under product-card END*/
+/*!Карточка продукта END*/
+
+@media screen and (max-width: 329px) {
+  .product {
+    max-width: 270px;
+    width: 100%;
+  }
+
+  .product__card_grid {
+    width: calc(100% - 24px);
+  }
+
+  .product__add-to-cart {
+    width: 100%;
+  }
+}
+
+/*!product color selectors*/
+.product__color-selector {
+  position: relative;
+  width: fit-content;
+  margin: 7px 0 0 0;
+  display: flex;
+  align-items: start;
+  gap: 8px;
+}
+
+.product__color-selector label {
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+.product__color-selector input.invisible {
+  position: absolute;
+  display: none;
+  top: -9999px;
+}
+
+.product__color-selector input:checked+label .color-selector__canvas {
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.product__color-selector .product_color-selector_main>input:checked+label .product_color-selector_red,
+.product__color-selector .product_color-selector_secondary>input:checked+label .product_color-selector_carmine-pink,
+.product__color-selector .product_color-selector_main>input:checked+label .product_color-selector_immature-yellow,
+.product__color-selector .product_color-selector_main>input:checked+label .product_color-selector_black,
+.product__color-selector .product_color-selector_main>input:checked+label .product_color-selector_turquoise-green {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+
+/*not checked*/
+.product_color-selector_red,
+.product_color-selector_carmine-pink,
+.product_color-selector_immature-yellow,
+.product_color-selector_black,
+.product_color-selector_turquoise-green {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/*not checked END*/
+
+
+/*colors of products*/
+.product_color-selector_red {
+  background-color: #FB1314;
+}
+
+.product_color-selector_carmine-pink {
+  background-color: #DB4444;
+}
+
+.product_color-selector_immature-yellow {
+  background-color: #ff6;
+}
+
+.product_color-selector_black {
+  background-color: #000;
+}
+
+.product_color-selector_turquoise-green {
+  background-color: #1e5945;
+}
+
+/*colors of products END*/
+/*!product color selectors END*/
+
+
+
+
+
+@media screen and (pointer: coarse) {
+  .product__add-to-cart {
+    display: block;
+  }
+}

@@ -1,0 +1,128 @@
+.section-categories {
+  max-width: 1170px;
+  margin: 80px auto 70px auto;
+
+}
+
+
+.section-categories__header_grid {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  margin-bottom: 60px;
+}
+
+.section-categories__header_grid .slider-btns {
+  align-self: end;
+  justify-self: end;
+}
+
+.section-categories__categories-slider {
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
+
+
+.section-categories__category_heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center; 
+  position: absolute;
+  left: 0;
+right: 0;
+  bottom: 23px;
+}
+
+.section-categories__category_phones {
+  background: no-repeat url(../../img/category/Category-CellPhone.svg);
+}
+.section-categories__category_computers {
+  background: no-repeat url(../../img/category/Category-Computer.svg)
+}
+.section-categories__category_smart-watch {
+  background: no-repeat url(../../img/category/Category-SmartWatch.svg)
+}
+.section-categories__category_camera {
+  background: no-repeat url(../../img/category/Category-Camera.svg)
+}
+.section-categories__category_headphones {
+  background: no-repeat url(../../img/category/Category-Headphone.svg)
+}
+.section-categories__category_gaming {
+  background: no-repeat url(../../img/category/Category-Gamepad.svg)
+}
+.section-categories__category {
+  flex-shrink: 0;
+  width: 170px;
+  height: 145px;
+  border: 1px solid #B3B3B3;
+  border-radius: 4px;
+  background-color: transparent;
+  background-position: center 25px;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.section-categories__category:hover {
+  background-color: #22bbbb;
+  border: 1px solid #4c4c4c;
+  filter: invert(1);
+}
+
+.section-categories__category:active {
+  transform: scale(0.992);
+}
+
+
+
+
+
+/*!media  (max-width: 1200px)*/
+@media screen and (max-width: 1200px) {
+  .section-categories {
+    padding-left: 10px;
+  }
+}
+
+/*!media  (max-width: 610px)*/
+@media screen and (max-width: 610px) {
+  .section-categories {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section-categories__categories-slider {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  
+  .section-categories__category {
+    flex-shrink: 0;
+    width: 85px;
+    height: 85px;
+    background-position: center;
+  }
+
+  .section-categories__category_heading {
+    display: none;
+}
+.section-categories .slider-btns {
+  display: none;
+}
+
+}
+
+/*!media  (max-width: 345px)*/
+@media screen and (max-width: 345px) {
+  .section-categories__header_grid {
+    grid-template-columns: 1fr;
+  }
+}

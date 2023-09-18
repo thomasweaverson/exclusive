@@ -1,0 +1,368 @@
+.section-featured {
+  max-width: 1170px;
+  margin: 71px auto 140px auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .section-featured {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.section-featured__header_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 60px;
+}
+
+
+/*!Плитка*/
+/*!Grid плитки*/
+.section-featured__tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 284px 284px;
+  gap: 32px 30px;
+}
+
+.section-featured__tiles_big {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+  width: 100%;
+}
+
+.section-featured__tiles_average {
+  max-width: 570px;
+  grid-column: 3 / 5;
+  grid-row: 1 / 2;
+  width: 100%;
+}
+
+.section-featured__tiles_small-1 {
+  max-width: 270px;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  width: 100%;
+}
+
+.section-featured__tiles_small-2 {
+  max-width: 270px;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+  width: 100%;
+}
+
+/*!Grid плитки END*/
+
+
+/*!расположение фотографий*/
+.section-featured__tiles>div {
+  background-color: #000;
+  position: relative;
+  border-radius: 4px;
+}
+
+.section-featured__tiles>div.section-featured__tiles_average {
+  background-color: #0d0d0d;
+}
+
+.section-featured__tiles_big img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.section-featured__tiles_average img {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 43px;
+}
+
+.section-featured__tiles_small-1 {
+  background: no-repeat center url(../../img/section_featured/small-1_bg.svg);
+  background-color: #000;
+}
+
+.section-featured__tiles_small-2 {
+  background: no-repeat center url(../../img/section_featured/small-2_bg.svg);
+  background-color: #000;
+}
+
+
+.section-featured__tiles_small-1 img,
+.section-featured__tiles_small-2 img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+/*!расположение фотографий END*/
+/*!текст - расположение */
+.section-featured__product-info {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  bottom: 24px;
+  left: 24px;
+}
+
+.section-featured__tiles_big .section-featured__product-info {
+  bottom: 32px;
+  left: 32px;
+  max-width: 242px;
+}
+
+.section-featured__tiles_average .section-featured__product-info {
+  max-width: 255px;
+}
+
+.section-featured__tiles_small-1 .section-featured__product-info {
+  gap: 8px;
+}
+
+.section-featured__tiles_small-2 .section-featured__product-info {
+  gap: 8px;
+}
+/*!текст - расположение END*/
+
+/*!text - styles*/
+
+.section-featured__product-info h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fafafa;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+
+.section-featured__product-info .section-featured__product-description {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #fafafa;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+}
+.section-featured__product-info .section-featured__product-buy-link {
+  margin: 0 0 -1px 0;
+  padding: 0 0 -1px 0;
+  border-bottom: 1px solid #858585;
+  width: fit-content;
+}
+.section-featured__product-info .section-featured__product-buy-link a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #fff;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+/*!text - styles END*/
+/*!Плитка END*/
+
+/*!media 750-1080*/
+@media screen and (min-width: 750px) and (max-width: 1080px) {
+  /*!Grid плитки*/
+.section-featured__tiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 284px 284px 284px;
+  gap: 10px 10px;
+}
+
+.section-featured__tiles_big {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.section-featured__tiles_big img {
+  left: unset;
+  right: -20px;
+}
+
+
+.section-featured__tiles_average {
+  width: 100%;
+  max-width: none;
+  grid-column: 1 / 4;
+  grid-row: 3 / 4;
+  justify-self: end;
+  background-color: #000;
+}
+
+.section-featured__tiles_average img {
+right: 20%;
+}
+
+.section-featured__tiles_small-1 {
+  max-width: 270px;
+  justify-self: end;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+.section-featured__tiles_small-2 {
+  max-width: 270px;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  justify-self: end;
+}
+
+/*!Grid плитки END*/
+/*!text*/
+.section-featured__tiles_big .section-featured__product-info {
+  top: 32px;
+}
+
+.section-featured__tiles_average .section-featured__product-info {
+  top: 32px;
+  left: 32px;
+  max-width: 255px;
+}
+/*!text END*/
+
+}
+
+/*!media 520-749*/
+@media screen and (min-width: 520px) and (max-width: 749px) {
+  /*!Grid плитки*/
+.section-featured__tiles {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 284px 284px 284px 284px;
+  gap: 10px 10px;
+}
+
+.section-featured__tiles_big {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.section-featured__tiles_big img {
+  left: unset;
+  right: 0px;
+}
+
+
+.section-featured__tiles_average {
+  width: 100%;
+  max-width: none;
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  justify-self: end;
+  background-color: #000;
+}
+
+.section-featured__tiles_average img {
+right: 10%;
+}
+
+.section-featured__tiles_small-1 {
+  max-width: 270px;
+  justify-self: center;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.section-featured__tiles_small-2 {
+  max-width: 270px;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  justify-self: center;
+}
+
+/*!Grid плитки END*/
+/*!text*/
+.section-featured__tiles_big .section-featured__product-info {
+  top: 32px;
+}
+
+.section-featured__tiles_average .section-featured__product-info {
+  top: 32px;
+  left: 32px;
+  max-width: 255px;
+}
+/*!text END*/
+
+}
+
+
+/*!media 200-519*/
+@media screen and (min-width: 200px) and (max-width: 519px) {
+  /*!Grid плитки*/
+.section-featured__tiles {
+  grid-template-columns: 1fr;
+  grid-template-rows: 120vw 380px 284px 284px;
+  gap: 10px 10px;
+}
+
+.section-featured__tiles_big {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.section-featured__tiles_big img {
+  left: unset;
+  right: 0px;
+  width: 100%;
+}
+
+
+.section-featured__tiles_average {
+  width: 100%;
+  max-width: none;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  justify-self: end;
+  background-color: #000;
+}
+
+.section-featured__tiles_average img {
+right: 1%;
+
+}
+
+.section-featured__tiles_small-1 {
+  max-width: 270px;
+  justify-self: center;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.section-featured__tiles_small-2 {
+  max-width: 270px;
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  justify-self: center;
+}
+
+/*!Grid плитки END*/
+/*!text*/
+.section-featured__tiles_big .section-featured__product-info {
+  top: 18px;
+  left: 18px;
+}
+
+.section-featured__tiles_average .section-featured__product-info {
+  top: 18px;
+  left: 18px;
+  max-width: 255px;
+}
+/*!text END*/
+
+}
