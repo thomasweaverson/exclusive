@@ -194,6 +194,8 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
+
+  cursor: pointer;
 }
 
 .product__prices {
@@ -210,6 +212,10 @@
   line-height: 24px;
   color: #DB4444;
 }
+.product__prices_current::before {
+  content: '$';
+}
+
 
 .product__prices_old {
   font-family: 'Poppins', sans-serif;
@@ -220,6 +226,10 @@
   color: #0000007f;
   text-decoration: line-through;
 }
+.product__prices_old::before {
+  content: '$';
+}
+
 
 .product__rating {
   display: flex;
@@ -244,6 +254,14 @@
 
   opacity: 50%;
 }
+
+.product__rating_reviews::after {
+  content: ')';
+}
+.product__rating_reviews::before {
+  content: '(';
+}
+
 
 /*!Description under product-card END*/
 /*!Карточка продукта END*/
@@ -351,3 +369,57 @@
     display: block;
   }
 }
+/*!4 our-products only*/
+.section-our-products .product__prices_old {
+  display: none;
+}
+/*!4 our-products only*/
+
+
+
+/*!4 wishlist & just-for-you only*/
+
+.section-wishlist .product__add-to-cart,
+.section-just-for-you  .product__add-to-cart {
+  display: block;
+}
+
+.section-wishlist .product__delete {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  justify-self: end;
+  background: no-repeat center url(../img/product_delete.svg);
+  background-color: #FFFFFF;
+
+  width: 34px;
+  height: 34px;
+  padding: 5px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.section-wishlist .product__delete:hover {
+  box-shadow: 0px 0px 8px -3px #DB4444;
+}
+
+.section-wishlist .product__delete:active {
+  transform: scale(0.95);
+}
+
+.section-wishlist .product__wishlist,
+.section-wishlist .product__details,
+.section-wishlist .product__rating,
+.section-wishlist .product__color-selector,
+.section-just-for-you .product__wishlist {
+  display: none;
+}
+
+.section-just-for-you .product__details {
+  grid-row: 1 / 2;
+}
+
+
+
+/*!4 wishlist & just-for-you only END*/
