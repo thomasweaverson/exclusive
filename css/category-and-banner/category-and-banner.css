@@ -421,6 +421,8 @@
     color: #fafafa;
     width: fit-content;
     margin: 5px auto 0 auto;
+    padding: 0 10px;
+    text-align: center;
   }
 
   .banner__promo>p:first-of-type>br {

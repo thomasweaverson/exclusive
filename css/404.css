@@ -1,0 +1,72 @@
+.not-found {
+
+  font-family: 'Inter', sans-serif;
+  font-size: 110px;
+  font-weight: 500;
+  line-height: 115px;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin: 140px auto 40px auto;
+}
+
+.not-found_text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.red-btn.not-found-btn {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  width: 254px;
+  margin-bottom: 140px;
+}
+
+
+.page404 {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .page404 {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .not-found {
+    font-size: 36px;
+    line-height: 40px;
+
+    margin: 20px auto;
+  }
+
+
+  .not-found_text {
+    margin-bottom: 20px;
+  }
+
+  .red-btn.not-found-btn {
+    width: 100%;
+    max-width: 254px;
+    margin-bottom: 20px;
+  }
+
+  ul.catalog_list.nfpage {
+    margin: 20px 0;
+  }
+
+
+}

@@ -1,0 +1,216 @@
+.sign__container {
+  max-width: 1440px;
+  margin: 60px auto 140px auto;
+}
+
+.sign__grid-container {
+  max-width: 1305px;
+  display: grid;
+  grid-template-columns: 805px minmax(0px, 1fr) 371px;
+  grid-template-rows: 781px;
+}
+
+
+.sign__grid-container .sign__form {
+  width: 371px;
+  justify-self: end;
+  align-self: center;
+}
+
+.sign__bg-container img {
+  width: 100%;
+}
+
+/*!form sign*/
+.sign__form .sign__heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+}
+
+.sign__form .sign__text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+  margin: 24px 0 48px 0;
+}
+
+.sign__form .sign__text:nth-of-type(2) {
+text-align: center;
+color: #4d4d4d;
+line-height: 28px;
+margin-bottom: 0;
+}
+
+.sign__form .sign__text a {
+  display: inline-block;
+  
+  border-bottom: 1px solid #808080;
+  
+  margin-left: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.sign__form input {
+  width: 100%;
+  height: 32px;
+  outline: none;
+  padding: 0 0 6px 0;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  border: none;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+.sign__form .red-btn {
+  display: block;
+  width: 100%;
+  
+}
+
+
+.sign__form .red-btn.white-btn {
+  margin: 16px 0 33px 0;
+  background-color: transparent;
+  border: 1px solid #999999;
+  color: #000;
+  max-width: unset;
+}
+
+.sign__form .red-btn.white-btn span img {
+  margin-right: 16px;
+}
+
+
+.white-btn__text {
+  display: inline;
+  position: relative;
+  bottom: 7px;
+}
+
+
+/*!form sign END*/
+
+
+
+
+
+
+@media screen and (max-width: 1220px) {
+  .sign {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*!media 789-1220*/
+@media screen and (min-width: 789px) and (max-width: 1220px) {
+  .sign__grid-container {
+    grid-template-columns: 1fr 10px 371px;
+    grid-template-rows: 1fr;
+  }
+
+}
+
+
+/*!media 200-788*/
+@media screen and (min-width: 200px) and (max-width: 788px) {
+  .blank {
+    display: none;
+  }
+
+  .sign__bg-container {
+    display: none;
+  }
+
+  .sign__grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+    justify-items: center;
+  }
+
+  .sign__bg-container img {
+    width: 371px;
+  }
+
+  .sign__grid-container .sign__form {
+    justify-self: center;
+  }
+}
+
+/*!media 200-420*/
+@media screen and (min-width: 200px) and (max-width: 420px) {
+  .sign__grid-container .sign__form {
+    width: 100%;
+  }
+  .sign__form .sign__heading {
+  font-size: 26px;
+  letter-spacing: 0em;
+}
+
+.sign__form .sign__text a {
+  margin-left: 10px;
+
+}
+}
+
+
+
+/*!Log in difference*/
+
+.sign__form_login-btn-forget-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sign__form_login-btn-forget-container .red-btn{
+width: 143px;
+}
+
+.sign__form_login-btn-forget-container a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  
+  color: #DB4444;
+  text-decoration: none;
+
+  justify-self: end;
+  align-self: center;
+}
+/*!Log in difference END*/
+
+@media screen and (max-width: 340px) {
+  .sign__form_login-btn-forget-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .sign__form_login-btn-forget-container .red-btn{
+    width: 100%;
+    }
+
+    .sign__form_login-btn-forget-container a {
+      justify-self: center;
+    }
+}

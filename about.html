@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive shop - educational layout by Serg Garden</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/header/header.css">
+  <link rel="stylesheet" href="css/about.css">
+
+  <link rel="stylesheet" href="css/section-services/services.css">
+  <link rel="stylesheet" href="css/footer/footer.css">
+
+
+
+  <script src="https://kit.fontawesome.com/d31cff1d68.js" crossorigin="anonymous"></script>
+  <script src="scripts/dropdown.js"></script> <!--Выпадающее меню в категориях-->
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="subheading-wrapper">
+      <div class="container subheading">
+        <div class="lang_dropdown">
+          <input class="lang_text-box" type="text" placeholder="English" readonly>
+          <div class="dropdown-btn"><img src="img/dropdown-btn.svg" alt="icon dropdown"></div>
+          <div class="lang_dropdown-options">
+            <div onclick="show('English')">English</div>
+            <div onclick="show('Russian')">Russian</div>
+            <div onclick="show('Uzbek')">Uzbek</div>
+            <div onclick="show('French')">French</div>
+          </div>
+        </div>
+        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
+        </p>
+      </div>
+    </div>
+    <div class="heading">
+      <div class="container heading__grid">
+        <div class="logo">
+          <h1 class="brand">Exclusive</h1>
+        </div>
+        <div class="heading__menu">
+          <ul class="heading__links_flex">
+            <li class="heading__link"><a href="index.html">Home</a></li>
+            <li class="heading__link"><a href="contacts.html">Contact</a></li>
+            <li class="heading__link"><a class="current" href="about.html">About</a></li>
+            <li class="heading__link"><a href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+        <div class="search-box-and-acc-module">
+          <div class="search-container">
+            <input class="search-box" type="search" name="search" placeholder="What are you looking for?">
+            <button class="search-button"><img src="img/search-glass.svg" alt="search glass"></button>
+          </div>
+          <div class="acc-module-container-wrapper">
+            <div class="acc-module-container">
+              <button onclick="document.location='wishlist.html'" class="acc-module_wishlist"></button>
+              <button onclick="document.location='cart.html'" class="acc-module_cart"></button>
+              <button onclick="dropdownUser()" class="acc-module_user dropdown"></button>
+
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div id="dropdown-user" class="user-dropdown-content">
+        <div class="dropdown-user-container">
+          <a href="user-account.html">
+            <div class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"><img src="img/acc-user.svg"
+                alt="icon account"><span>Manage My Account</span></div>
+          </a>
+          <a href="#">
+            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-mallbag.svg" alt="mallbag"><span>My
+                Order</span></div>
+          </a>
+          <a href="#">
+            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-cancel.svg" alt="Cancellations"><span>My
+                Cancellations</span></div>
+          </a>
+          <a href="#">
+            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-reviews.svg" alt="reviews"><span>My
+                Reviews</span></div>
+          </a>
+          <a href="#">
+            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-logout.svg"
+                alt="logout"><span>Logout</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="divider"></div>
+  <main>
+    <ul class="catalog_list about-page">
+      <li class="catalog_li"><a href="index.html">Home</a></li>
+      <li class="catalog_li">About</li>
+    </ul>
+    <section class="section-our-story">
+      <div class="section-our-story__grid-container">
+        <div class="section-our-story__story">
+          <h1 class="section-our-story__story_heading">Our Story</h1>
+          <p class="section-our-story__story_text">Launced in 2015, Exclusive is South Asia’s premier online shopping
+            makterplace with an active presense in Bangladesh. Supported by wide range of tailored marketing, data and
+            service solutions, Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the
+            region. </p>
+          <p class="section-our-story__story_text">Exclusive has more than 1 Million products to offer, growing at a
+            very fast. Exclusive offers a diverse assotment in categories ranging from consumer.</p>
+        </div>
+        <img class="section-our-story__photo" src="img/about/our-story-photo.png" alt="side image women">
+      </div>
+    </section>
+    <section class="section-indicators">
+      <div class="section-indicators__flex-wrapper">
+        <div class="section-indicators__card">
+          <div class="section-indicators__icon section-indicators__icon-sallers"></div>
+          <p class="section-indicators__number">10.5</p>
+          <p class="section-indicators__text">Sallers active our site</p>
+        </div>
+        <div class="section-indicators__card section-indicators__card_accent">
+          <div class="section-indicators__icon section-indicators__icon-monthly"></div>
+          <p class="section-indicators__number">33k</p>
+          <p class="section-indicators__text">Monthly Product Sale</p>
+        </div>
+        <div class="section-indicators__card">
+          <div class="section-indicators__icon section-indicators__icon-customers"></div>
+          <p class="section-indicators__number">45.5k</p>
+          <p class="section-indicators__text">Customer active in our site</p>
+        </div>
+        <div class="section-indicators__card">
+          <div class="section-indicators__icon section-indicators__icon-annual"></div>
+          <p class="section-indicators__number">25k</p>
+          <p class="section-indicators__text">Anual gross sale in our site</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-management">
+      <div class="section-management__flex-wrapper">
+        <div class="section-management__card">
+          <div class="section-management__card_photo"><img class="tom-cruise" src="img/about/Tom Cruise.png" alt="Tom Cruise"></div>
+          <h3 class="section-management__name">Tom Cruise</h3>
+          <p class="section-management__position">Founder & Chairman</p>
+          <div class="section-management__social">
+            <img src="img/footer/Icon-Twitter.png" alt="twitter">
+            <img src="img/footer/icon-instagram.svg" alt="instagram">
+            <img src="img/footer/Icon-Linkedin.svg" alt="linked in">
+          </div>
+        </div>
+        <div class="section-management__card">
+          <div class="section-management__card_photo"><img class="emma-watson" src="img/about/Emma Watson.png" alt="Emma Watson"></div>
+          <h3 class="section-management__name">Emma Watson</h3>
+          <p class="section-management__position">Managing Director</p>
+          <div class="section-management__social"></div>
+          <div class="section-management__social">
+            <img src="img/footer/Icon-Twitter.png" alt="twitter">
+            <img src="img/footer/icon-instagram.svg" alt="instagram">
+            <img src="img/footer/Icon-Linkedin.svg" alt="linked in">
+          </div>
+        </div>
+        <div class="section-management__card">
+          <div class="section-management__card_photo"><img class="will-smith" src="img/about/Will Smith.png" alt="Will Smith"></div>
+          <h3 class="section-management__name">Will Smith</h3>
+          <p class="section-management__position">Product Designer</p>
+          <div class="section-management__social"></div>
+          <div class="section-management__social">
+            <img src="img/footer/Icon-Twitter.png" alt="twitter">
+            <img src="img/footer/icon-instagram.svg" alt="instagram">
+            <img src="img/footer/Icon-Linkedin.svg" alt="linked in">
+          </div>
+        </div>
+      </div>
+      <div class="section-management__selector">
+        <input id="management-top" type="radio" name="section-management__selector">
+        <label for="management-top"></label>
+        <input id="management-subtop" type="radio" name="section-management__selector">
+        <label for="management-subtop"></label>
+        <input id="management-middle" type="radio" name="section-management__selector" checked>
+        <label for="management-middle"></label>
+        <input id="management-sons-of-general" type="radio" name="section-management__selector">
+        <label for="management-sons-of-general"></label>
+        <input id="management-general-lovers" type="radio" name="section-management__selector">
+        <label for="management-general-lovers"></label>
+
+      </div>
+    </section>
+
+    <section class="section-services about-page">
+      <div class="section-services__flex-wrapper">
+        <div class="section-services__delivery">
+          <div class="section-services__icon">
+            <img src="img/section-services/icon-delivery.svg" alt="icon delivery">
+          </div>
+          <h2>FREE AND FAST DELIVERY</h2>
+          <p>Free delivery for all orders over $140</p>
+        </div>
+        <div class="section-services__support">
+          <div class="section-services__icon">
+            <img src="img/section-services/icon-support.svg" alt="icon support">
+          </div>
+          <h2>24/7 CUSTOMER SERVICE</h2>
+          <p>Friendly 24/7 customer support</p>
+        </div>
+        <div class="section-services__money-back">
+          <div class="section-services__icon">
+            <img src="img/section-services/icon-money-back.svg" alt="icon money-back">
+          </div>
+          <h2>MONEY BACK GUARANTEE</h2>
+          <p>We return money within 30 days</p>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="footer">
+    <div class="footer__container-flex-grid">
+
+      <div class="footer__subscribe">
+        <div class="logo">
+          <h1 class="brand">Exclusive</h1>
+        </div>
+        <h2 class="footer__item-heading">Subscribe</h2>
+        <p class="footer__link">Get 10% off your first order</p>
+        <div class="footer__subscribe_form-container">
+          <input type="text" class="footer__subscribe_input" placeholder="Enter your email" name="mail" required>
+          <button type="submit" name="submit-btn" class="footer__subscribe_submit-btn"><img
+              src="img/footer/icon-send.svg" alt="submit button"></button>
+        </div>
+      </div>
+
+
+      <div class="footer__support">
+        <h2 class="footer__item-heading">Support</h2>
+        <p class="footer__link">111 Bijoy sarani, Dhaka,<br> DH 1515, Bangladesh.</p>
+        <p class="footer__link">exclusive@gmail.com</p>
+        <p class="footer__link">+88015-88888-9999</p>
+      </div>
+
+
+      <div class="footer__account">
+        <h2 class="footer__item-heading">Account</h2>
+        <p class="footer__link">My Account</p>
+        <p class="footer__link">Login / Register</p>
+        <p class="footer__link">Cart</p>
+        <p class="footer__link">Wishlist</p>
+        <p class="footer__link">Shop</p>
+      </div>
+
+
+      <div class="footer__quick-link">
+        <h2 class="footer__item-heading">Quick Link</h2>
+        <p class="footer__link">Privacy Policy</p>
+        <p class="footer__link">Terms Of Use</p>
+        <p class="footer__link">FAQ</p>
+        <p class="footer__link">Contact</p>
+      </div>
+
+      <div class="footer__download-app">
+        <h2 class="footer__item-heading">Download App</h2>
+        <p class="footer__text">Save $3 with App New User Only</p>
+        <div class="footer__download-links_grid-container">
+          <div class="footer__download-app_qrcode"><img src="img/footer/footer-download_qrcode.svg"
+              alt="download qr code"></div>
+          <div class="footer_download-app_google-play"><img src="img/footer/footer-download_google-play.png"
+              alt="google play market"></div>
+          <div class="footer_download-app_apple-store"><img src="img/footer/footer-download_apple-store.png"
+              alt="apple store"></div>
+        </div>
+        <div class="footer__social_flex-container">
+          <img src="img/footer/Icon-Facebook.svg" alt="facebook">
+          <img src="img/footer/Icon-Twitter.png" alt="twitter">
+          <img src="img/footer/icon-instagram.svg" alt="instagram">
+          <img src="img/footer/Icon-Linkedin.svg" alt="linked in">
+        </div>
+      </div>
+
+    </div>
+    <div class="divider divider-footer"></div>
+    <div class="footer__cellar">
+      <img src="img/footer/icon-copyright.svg" alt="copyright">
+      <span>Copyright Rimel 2022.</span>
+      <span>All right reserved</span>
+    </div>
+  </footer>
+
+  <script src="scripts/header__dropdown-lang.js"></script><!--Меню выбора языка в шапке-->
+  <script src="scripts/change-class-by-click.js"></script> <!--Ставит "лайк" продукту-->
+
+</body>
+
+</html>

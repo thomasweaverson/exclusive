@@ -24,7 +24,7 @@ html {
 .divider-footer {
   background-color: #141414;
   opacity: 100%;
-  
+
   margin: 44px auto 16px auto;
 }
 
@@ -76,6 +76,125 @@ html {
 }
 
 /*!section-headers END*/
+
+/*!Catalog путь*/
+.catalog_list {
+
+  max-width: 1170px;
+  margin: 80px auto 80px auto;
+  padding: 0;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+
+}
+
+.catalog_list .catalog_li {
+  display: inline;
+  color: #808080;
+}
+
+.catalog_list .catalog_li a {
+  text-decoration: none;
+  color: #808080;
+}
+
+.catalog_list .catalog_li::after {
+  content: '/';
+  padding: 0 6px 0 11px;
+}
+
+
+.catalog_list .catalog_li:last-of-type {
+  color: #000;
+}
+
+.catalog_list .catalog_li:last-of-type::after {
+  content: '';
+  padding: 0;
+}
+
+
+/*!Для случаев с именем пользователя*/
+.catalog_list_flex-container {
+  max-width: 1170px;
+  margin: 80px auto 80px auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+.catalog_list_flex-container p+ul.catalog_list {
+  max-width: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog_list_flex-container p {
+  margin: 0;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.catalog_list_flex-container p>span {
+  color: #DB4444;
+}
+
+@media screen and (max-width: 1200px) {
+  .catalog_list_flex-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .catalog_list_flex-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 111px) and (max-width: 719px) {
+  .catalog_list_flex-container {
+    margin: 20px auto 20px auto;
+  
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .catalog_list_flex-container {
+    flex-direction: column-reverse;
+    gap: 40px;
+    margin: 30px auto 4 0px auto;
+  }
+}
+
+/*!Для случаев с именем пользователя END*/
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .catalog_list {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/*!Catalog путь END*/
+
+
+
 
 
 /*!slider-btn*/
@@ -135,7 +254,7 @@ html {
 
 .red-btn:active {
   transform: scale(0.985);
-} 
+}
 
 /*!Красная кнопка END*/
 
@@ -145,6 +264,7 @@ html {
   padding-right: 10px;
   margin: 0 auto 32px auto;
 }
+
 .back-btn {
   display: block;
   width: 46px;
@@ -161,15 +281,55 @@ html {
 }
 
 .back-btn img {
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-margin: auto;
-transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(90deg);
 }
 
 /*!back button*/
 
 
+/*!white-btn*/
+
+.white-btn {
+  width: 100%;
+  max-width: 223px;
+  background-color: #fff;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 56px;
+
+  position: relative;
+
+  justify-self: end;
+
+
+  cursor: pointer;
+}
+
+.white-btn>span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+
+  width: fit-content;
+  height: 24px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+.white-btn:active {
+  transform: scale(0.985);
+}
+
+/*!white-btn END*/

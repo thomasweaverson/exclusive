@@ -1,0 +1,20 @@
+.section-related {
+  max-width: 1170px;
+  margin: 20px auto 140px auto;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .section-related {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.section-related .goods_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}

@@ -260,17 +260,45 @@ input.search-box::placeholder {
 
 .acc-module_wishlist {
   background: no-repeat center url(../../img/acc-heart.svg);
+  position: relative;
 }
+
+.acc-module__quantity {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #DB4444;
+  position: absolute;
+  right: 0;
+  top: 1px;
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  
+  color: #fafafa;
+}
+
 .acc-module_cart {
   background: no-repeat center url(../../img/acc-cart.svg);
+  position: relative;
 }
+
+.acc-module_cart.cart-small-bg {
+  background: no-repeat url(../../img/acc-cart_small.svg);
+  background-position: bottom 0px left 1px;
+  position: relative;
+}
+
 
 .acc-module_user {
   background: no-repeat center url(../../img/acc-user.svg);
+  position: relative;
 }
 
 .acc-module_user-bg_fix {
-background: no-repeat center url(../../img/acc-user_fix.svg) #DB4444;
+  background: no-repeat center url(../../img/acc-user_fix.svg) #DB4444;
 }
 
 /*!acc-module user-dropdown*/
@@ -307,7 +335,7 @@ background: no-repeat center url(../../img/acc-user_fix.svg) #DB4444;
 }
 
 .dropdown-user-container>a:hover {
-  filter:brightness(0.85)
+  filter: brightness(0.85)
 }
 
 .dropdown-user__menu-item_manage-account>img {
