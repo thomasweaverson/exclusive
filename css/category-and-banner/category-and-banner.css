@@ -461,10 +461,16 @@
     width: 170px;
   }
 
+
+.category-and-banner .category>ul {
+  position: relative;
+}
+
+
   .dropdown-content.woman {
     display: none;
-    position: static;
-    margin-left: 50px;
+    right: 0;
+    top: 33px;
     width: 78%;
     background-color: #ffffff;
     box-shadow: 1px 0px 6px 1px #aaa;
@@ -472,8 +478,8 @@
 
   .dropdown-content.man {
     display: none;
-    position: static;
-    margin-left: 50px;
+    right: 0;
+    top: 75px;
     width: 78%;
     background-color: #ffffff;
     box-shadow: 1px 0px 6px 1px #aaa;
