@@ -59,8 +59,7 @@ https://thomasweaverson.github.io/exclusive/about.html - страница About
 https://thomasweaverson.github.io/exclusive/contacts.html - страница Контакты
 
 
-https://thomasweaverson.github.io/exclusive/404.html
-
+https://thomasweaverson.github.io/exclusive/404.html - 404 страница
 
 
 https://thomasweaverson.github.io/exclusive/product0017.html - страница товара
