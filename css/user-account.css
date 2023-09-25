@@ -29,7 +29,7 @@
 }
 
 .acc-module_user_section-user-account {
-  background: no-repeat center url(../../img/acc-user_fix.svg) #DB4444;
+  background: no-repeat center url(../img/acc-user_fix.svg) #DB4444;
 }
 
 
@@ -61,12 +61,15 @@
   margin: 8px 0;
 
 }
+
 .account-menu__item.account-menu__item_active {
   opacity: unset;
 }
+
 a.account-menu__item_active {
   color: #DB4444;
 }
+
 /*!Menu END*/
 
 /*!Form*/
@@ -173,11 +176,12 @@ a.account-menu__item_active {
   .section-edit-profile {
     margin-top: 0px;
   }
+
   .account-menu__heading {
     margin: 0;
   }
 
-  .account-menu ul{
+  .account-menu ul {
     margin: 0;
   }
 
@@ -188,7 +192,7 @@ a.account-menu__item_active {
   .account-menu__item {
     text-indent: 15px;
     margin: 4px 0;
-  
+
   }
 
   .section-edit-profile__form {
