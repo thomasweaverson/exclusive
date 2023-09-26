@@ -240,11 +240,54 @@
   margin: 0;
 }
 
-.product__rating_stars {
-  height: 20px;
-  display: flex;
-  align-items: end;
+/*!rating stars masked png*/
+.product__rating_stars_masked {
+display: inline-block;
+width: 100px;
+height: 20px;
+position: relative;
 }
+
+.product__rating_stars_masked img {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+position: absolute;
+z-index: 3; 
+}
+
+.product__rating_stars_masked progress {
+  position: absolute;
+  z-index: 1;
+
+  -webkit-appearance: none;
+  -moz-appearence: none;
+  appearance: none;
+  border: none;
+  display: inline-block;
+  height: 20px;
+  width: 100%;
+  color: orange;
+  background-color: #BFBFBF;
+
+}
+
+.product__rating_stars_masked progress::-webkit-progress-value {
+  background-color: orange;
+}
+
+.product__rating_stars_masked progress::-webkit-progress-bar {
+  background-color: #BFBFBF;
+}
+
+
+.product__rating_stars_masked progress::-moz-progress-bar {
+  background-color: orange;
+}
+/*!rating stars masked png END*/
+
 
 .product__rating_reviews {
   font-family: 'Poppins', sans-serif;
