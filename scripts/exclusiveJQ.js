@@ -1,6 +1,6 @@
 //? Add animation - "add to wishlist". Product card
-$(function() {
-  $('.product__card div.product__wishlist').click(function() {
+$(function () {
+  $('.product__card div.product__wishlist').click(function () {
     $(this).toggleClass('product__wishlist_fix');
   });
 });
@@ -12,9 +12,33 @@ $(function () {
   });
 });
 
-//? Change user icon on click, when open dropdown menu
+//? Change user icon on click, and open dropdown menu START
 $(function () {
-  $('.acc-module_user').click(function () {
-    $(this).toggleClass('acc-module_user-bg_fix');
+  let accModuleUser = $('.acc-module_user');
+  let dropdownUser = $('#dropdown-user');
+  accModuleUser.click(function () {
+    accModuleUser.toggleClass('acc-module_user-bg_fix');
+    accModuleUser.hasClass('acc-module_user-bg_fix')
+      ? dropdownUser.show(100)
+      : dropdownUser.hide(100);
   });
+  hideUserDropdownByClickOut();
 });
+
+function hideUserDropdownByClickOut() {
+  $(document).mouseup(function (e) {
+    let accModuleUserTarget = $('.acc-module_user');
+    let dropdownUserTarget = $('#dropdown-user');
+    if (
+      !dropdownUserTarget.is(e.target) &&
+      !accModuleUserTarget.is(e.target) &&
+      accModuleUserTarget.has(e.target).length === 0 &&
+      dropdownUserTarget.has(e.target).length === 0
+    ) {
+      dropdownUserTarget.hide(100);
+      accModuleUserTarget.removeClass('acc-module_user-bg_fix');
+    }
+  });
+}
+//? Change user icon on click, and open dropdown menu END
+

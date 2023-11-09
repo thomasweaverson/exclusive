@@ -67,39 +67,57 @@
               <button onclick="document.location='cart.html'" class="acc-module_cart cart-small-bg">
                 <div class="acc-module__quantity">2</div>
               </button>
-              <button onclick="dropdownUser()" class="acc-module_user dropdown"></button>
-
+              <button class="acc-module_user dropdown"></button>
+              <div id="dropdown-user" class="user-dropdown-content" style="display: none;">
+                <div class="dropdown-user-container">
+                  <a href="user-account.html">
+                    <div
+                      class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"
+                    >
+                      <img src="img/acc-user.svg" alt="icon account" /><span
+                        >Manage My Account</span
+                      >
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-mallbag.svg"
+                        alt="mallbag"
+                      /><span>My Order</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-cancel.svg"
+                        alt="Cancellations"
+                      /><span>My Cancellations</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-reviews.svg"
+                        alt="reviews"
+                      /><span>My Reviews</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-logout.svg"
+                        alt="logout"
+                      /><span>Logout</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
 
             </div>
 
           </div>
 
-        </div>
-      </div>
-
-      <div id="dropdown-user" class="user-dropdown-content">
-        <div class="dropdown-user-container">
-          <a href="user-account.html">
-            <div class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"><img src="img/acc-user.svg"
-                alt="icon account"><span>Manage My Account</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-mallbag.svg" alt="mallbag"><span>My
-                Order</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-cancel.svg" alt="Cancellations"><span>My
-                Cancellations</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-reviews.svg" alt="reviews"><span>My
-                Reviews</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-logout.svg"
-                alt="logout"><span>Logout</span>
-            </div>
-          </a>
         </div>
       </div>
     </div>
