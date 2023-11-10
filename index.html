@@ -30,10 +30,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="scripts/dropdown.js"></script>
-    <!--Выпадающее меню в категориях-->
-    <script src="scripts/header__dropdown-lang.js" defer></script>
-    <!--Меню выбора языка в шапке-->
-    <!-- <script src="scripts/change-class-by-click.js" defer></script> Ставит "лайк" продукту -->
   </head>
 
   <body>
@@ -96,10 +92,12 @@
                   onclick="document.location='cart.html'"
                   class="acc-module_cart"
                 ></button>
-                <button class="acc-module_user dropdown">
-
-                </button>
-                <div id="dropdown-user" class="user-dropdown-content" style="display: none;">
+                <button class="acc-module_user dropdown"></button>
+                <div
+                  id="dropdown-user"
+                  class="user-dropdown-content"
+                  style="display: none"
+                >
                   <div class="dropdown-user-container">
                     <a href="user-account.html">
                       <div
@@ -148,24 +146,21 @@
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </header>
     <div class="divider"></div>
     <main>
       <section class="category-and-banner">
         <div class="category">
           <ul>
-            <li
-              onclick="dropdownWoman()"
-              class="categories dropdown category-flex"
-            >
+            <li class="categories dropdown dropdownWomanCategory category-flex">
               <span>Woman’s Fashion</span>
               <span class="category-dropdown-btn"
                 ><img src="img/category dropdown-btn.svg" alt="icon dropdown"
               /></span>
             </li>
 
-            <div id="dropdown-woman" class="dropdown-content woman">
+            <div style="display: none" id="dropdown-woman" class="dropdown-content woman">
               <ul>
                 <li class="category-dropdown_heading">
                   <a href="#">Woman's Fashion</a>
@@ -178,16 +173,13 @@
                 <li><a href="#">Plus Size</a></li>
               </ul>
             </div>
-            <li
-              onclick="dropdownMan()"
-              class="categories dropdown category-flex"
-            >
+            <li class="categories dropdown dropdownManCategory category-flex">
               <span>Men’s Fashion</span>
               <span class="category-dropdown-btn"
                 ><img src="img/category dropdown-btn.svg" alt="icon dropdown"
               /></span>
             </li>
-            <div id="dropdown-man" class="dropdown-content man">
+            <div style="display: none" id="dropdown-man" class="dropdown-content man">
               <ul>
                 <li class="category-dropdown_heading">
                   <a href="#">Man's Fashion</a>
@@ -1341,7 +1333,8 @@
         <a href="#top" class="back-btn">
           <img src="img/arrow-left.svg" alt="btn back" />
         </a>
-      </div>-->
+      </div>
+      -->
     </main>
     <footer class="footer">
       <div class="footer__container-flex-grid">

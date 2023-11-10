@@ -70,3 +70,64 @@ $(document).on('click', 'div[class="language"]', function(e) {
   $('.langDropdown_current').text($(this).html())
 });
 //? Language dropdown END
+
+
+//? Change Category Woman Dropdown START
+$(function () {
+  let dropdownWomanCategory = $('.dropdownWomanCategory');
+  let dropdownWomanContent = $('#dropdown-woman')
+  dropdownWomanCategory.click(function () {
+    dropdownWomanCategory.toggleClass('activeWomanDropdown');
+    dropdownWomanCategory.hasClass('activeWomanDropdown')
+      ? dropdownWomanContent.show(100)
+      : dropdownWomanContent.hide(100);
+  });
+  hideDropdownWomanCategoryByClickOut();
+});
+
+function hideDropdownWomanCategoryByClickOut() {
+  $(document).mouseup(function (e) {
+    let dropdownWomanCategory = $('.dropdownWomanCategory');
+    let dropdownWomanContent = $('#dropdown-woman')
+    if (
+      !dropdownWomanCategory.is(e.target) &&
+      !dropdownWomanContent.is(e.target) &&
+      dropdownWomanContent.has(e.target).length === 0 &&
+      dropdownWomanCategory.has(e.target).length === 0
+    ) {
+      dropdownWomanContent.hide(100);
+      dropdownWomanCategory.removeClass('activeWomanDropdown');
+    }
+  });
+}
+//? Change Category Woman Dropdown END
+
+//? Change Category Man Dropdown START
+$(function () {
+  let dropdownManCategory = $('.dropdownManCategory');
+  let dropdownManContent = $('#dropdown-man')
+  dropdownManCategory.click(function () {
+    dropdownManCategory.toggleClass('activeManDropdown');
+    dropdownManCategory.hasClass('activeManDropdown')
+      ? dropdownManContent.show(100)
+      : dropdownManContent.hide(100);
+  });
+  hideDropdownManCategoryByClickOut();
+});
+
+function hideDropdownManCategoryByClickOut() {
+  $(document).mouseup(function (e) {
+    let dropdownManCategory = $('.dropdownManCategory');
+    let dropdownManContent = $('#dropdown-man')
+    if (
+      !dropdownManCategory.is(e.target) &&
+      !dropdownManContent.is(e.target) &&
+      dropdownManContent.has(e.target).length === 0 &&
+      dropdownManCategory.has(e.target).length === 0
+    ) {
+      dropdownManContent.hide(100);
+      dropdownManCategory.removeClass('activeManDropdown');
+    }
+  });
+}
+//? Change Category Man Dropdown END
