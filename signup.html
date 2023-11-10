@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/sign.css">
   <link rel="stylesheet" href="css/footer/footer.css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="scripts/exclusiveJQ.js" defer></script>
   <script src="https://kit.fontawesome.com/d31cff1d68.js" crossorigin="anonymous"></script>
 
 
@@ -24,13 +26,15 @@
     <div class="subheading-wrapper">
       <div class="container subheading">
         <div class="lang_dropdown">
-          <input class="lang_text-box" type="text" placeholder="English" readonly>
-          <div class="dropdown-btn"><img src="img/dropdown-btn.svg" alt="icon dropdown"></div>
+          <div class="langDropdown_current">English</div>
+          <div class="dropdown-btn">
+            <img src="img/dropdown-btn.svg" alt="icon dropdown" />
+          </div>
           <div class="lang_dropdown-options">
-            <div onclick="show('English')">English</div>
-            <div onclick="show('Russian')">Russian</div>
-            <div onclick="show('Uzbek')">Uzbek</div>
-            <div onclick="show('French')">French</div>
+            <div class="language">English</div>
+            <div class="language">Russian</div>
+            <div class="language">Uzbek</div>
+            <div class="language">French</div>
           </div>
         </div>
         <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
@@ -60,7 +64,51 @@
               <button onclick="document.location='signup.html'" class="acc-module_wishlist"></button>
               <button class="acc-module_cart"></button>
               <button onclick="dropdownUser()" class="acc-module_user dropdown"></button>
-
+              <div id="dropdown-user" class="user-dropdown-content" style="display: none;">
+                <div class="dropdown-user-container">
+                  <a href="user-account.html">
+                    <div
+                      class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"
+                    >
+                      <img src="img/acc-user.svg" alt="icon account" /><span
+                        >Manage My Account</span
+                      >
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-mallbag.svg"
+                        alt="mallbag"
+                      /><span>My Order</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-cancel.svg"
+                        alt="Cancellations"
+                      /><span>My Cancellations</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-reviews.svg"
+                        alt="reviews"
+                      /><span>My Reviews</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="dropdown-user__menu-item">
+                      <img
+                        src="img/dropdown-user-logout.svg"
+                        alt="logout"
+                      /><span>Logout</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
 
             </div>
 
@@ -69,31 +117,7 @@
         </div>
       </div>
 
-      <div id="dropdown-user" class="user-dropdown-content">
-        <div class="dropdown-user-container">
-          <a href="#">
-            <div class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"><img src="img/acc-user.svg"
-                alt="icon account"><span>Manage My Account</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-mallbag.svg" alt="mallbag"><span>My
-                Order</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-cancel.svg" alt="Cancellations"><span>My
-                Cancellations</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-reviews.svg" alt="reviews"><span>My
-                Reviews</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-logout.svg"
-                alt="logout"><span>Logout</span>
-            </div>
-          </a>
-        </div>
-      </div>
+
     </div>
   </header>
   <div class="divider"></div>
@@ -194,8 +218,6 @@
   </footer>
 
   <script src="scripts/header__dropdown-lang.js"></script><!--Меню выбора языка в шапке-->
-  <script src="scripts/change-class-by-click.js"></script> <!--Ставит "лайк" продукту-->
-
 </body>
 
 </html>

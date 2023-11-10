@@ -16,7 +16,8 @@
   <link rel="stylesheet" href="css/footer/footer.css">
   <link rel="stylesheet" href="css/product_card.css">
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="scripts/exclusiveJQ.js" defer></script>
   <script src="https://kit.fontawesome.com/d31cff1d68.js" crossorigin="anonymous"></script>
   <script src="scripts/dropdown.js"></script> <!--Выпадающее меню в категориях-->
 
@@ -29,13 +30,15 @@
     <div class="subheading-wrapper">
       <div class="container subheading">
         <div class="lang_dropdown">
-          <input class="lang_text-box" type="text" placeholder="English" readonly>
-          <div class="dropdown-btn"><img src="img/dropdown-btn.svg" alt="icon dropdown"></div>
+          <div class="langDropdown_current">English</div>
+          <div class="dropdown-btn">
+            <img src="img/dropdown-btn.svg" alt="icon dropdown" />
+          </div>
           <div class="lang_dropdown-options">
-            <div onclick="show('English')">English</div>
-            <div onclick="show('Russian')">Russian</div>
-            <div onclick="show('Uzbek')">Uzbek</div>
-            <div onclick="show('French')">French</div>
+            <div class="language">English</div>
+            <div class="language">Russian</div>
+            <div class="language">Uzbek</div>
+            <div class="language">French</div>
           </div>
         </div>
         <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
@@ -66,9 +69,7 @@
                 <div class="acc-module__quantity">4</div>
               </button>
               <button onclick="document.location='cart.html'" class="acc-module_cart"></button>
-              <button onclick="dropdownUser()" class="acc-module_user dropdown"></button>
-
-
+              <button class="acc-module_user dropdown"></button>
             </div>
 
           </div>
@@ -471,7 +472,6 @@
   </footer>
 
   <script src="scripts/header__dropdown-lang.js"></script><!--Меню выбора языка в шапке-->
-  <script src="scripts/change-class-by-click.js"></script> <!--Ставит "лайк" продукту-->
 
 </body>
 

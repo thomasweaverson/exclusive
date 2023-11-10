@@ -66,8 +66,7 @@
 }
 
 .dropdown-content.woman {
-  display: none;
-  position: absolute;
+    position: absolute;
   top: 0;
   right: -185px;
   background-color: #ffffff;
@@ -75,7 +74,7 @@
 }
 
 .dropdown-content.man {
-  display: none;
+ 
   position: absolute;
   top: 40px;
   right: -157px;

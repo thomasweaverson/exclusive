@@ -1,1020 +1,1435 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusive shop - educational layout by Serg Garden</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive shop - educational layout by Serg Garden</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/header/header.css" />
+    <link
+      rel="stylesheet"
+      href="css/category-and-banner/category-and-banner.css"
+    />
+    <link rel="stylesheet" href="css/section-today/today.css" />
+    <link rel="stylesheet" href="css/section-categories/categories.css" />
+    <link rel="stylesheet" href="css/section-month/month.css" />
+    <link rel="stylesheet" href="css/banner-middle-page.css" />
+    <link rel="stylesheet" href="css/section-our-products/our-products.css" />
+    <link rel="stylesheet" href="css/section-featured/featured.css" />
+    <link rel="stylesheet" href="css/section-services/services.css" />
+    <link rel="stylesheet" href="css/footer/footer.css" />
+    <link rel="stylesheet" href="css/product_card.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/header/header.css">
-  <link rel="stylesheet" href="css/category-and-banner/category-and-banner.css">
-  <link rel="stylesheet" href="css/section-today/today.css">
-  <link rel="stylesheet" href="css/section-categories/categories.css">
-  <link rel="stylesheet" href="css/section-month/month.css">
-  <link rel="stylesheet" href="css/banner-middle-page.css">
-  <link rel="stylesheet" href="css/section-our-products/our-products.css">
-  <link rel="stylesheet" href="css/section-featured/featured.css">
-  <link rel="stylesheet" href="css/section-services/services.css">
-  <link rel="stylesheet" href="css/footer/footer.css">
-  <link rel="stylesheet" href="css/product_card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/exclusiveJQ.js" defer></script>
 
+    <script
+      src="https://kit.fontawesome.com/d31cff1d68.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/dropdown.js"></script>
+  </head>
 
-  <script src="https://kit.fontawesome.com/d31cff1d68.js" crossorigin="anonymous"></script>
-  <script src="scripts/dropdown.js"></script> <!--Выпадающее меню в категориях-->
-
-
-</head>
-
-<body>
-
-  <header>
-    <div class="subheading-wrapper">
-      <div class="container subheading">
-        <div class="lang_dropdown">
-          <input class="lang_text-box" type="text" placeholder="English" readonly>
-          <div class="dropdown-btn"><img src="img/dropdown-btn.svg" alt="icon dropdown"></div>
-          <div class="lang_dropdown-options">
-            <div onclick="show('English')">English</div>
-            <div onclick="show('Russian')">Russian</div>
-            <div onclick="show('Uzbek')">Uzbek</div>
-            <div onclick="show('French')">French</div>
-          </div>
-        </div>
-        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
-        </p>
-      </div>
-    </div>
-    <div class="heading">
-      <div class="container heading__grid">
-        <div class="logo">
-          <h1 class="brand">Exclusive</h1>
-        </div>
-        <div class="heading__menu">
-          <ul class="heading__links_flex">
-            <li class="heading__link"><a class="current" href="#">Home</a></li>
-            <li class="heading__link"><a href="contacts.html">Contact</a></li>
-            <li class="heading__link"><a href="about.html">About</a></li>
-            <li class="heading__link"><a href="signup.html">Sign Up</a></li>
-          </ul>
-        </div>
-        <div class="search-box-and-acc-module">
-          <div class="search-container">
-            <input class="search-box" type="search" name="search" placeholder="What are you looking for?">
-            <button class="search-button"><img src="img/search-glass.svg" alt="search glass"></button>
-          </div>
-          <div class="acc-module-container-wrapper">
-            <div class="acc-module-container">
-              <button onclick="document.location='wishlist.html'" class="acc-module_wishlist"></button>
-              <button onclick="document.location='cart.html'" class="acc-module_cart"></button>
-              <button onclick="dropdownUser()" class="acc-module_user dropdown"></button>
-
-
+  <body>
+    <header>
+      <div class="subheading-wrapper">
+        <div class="container subheading">
+          <div class="lang_dropdown">
+            <div class="langDropdown_current">English</div>
+            <div class="dropdown-btn">
+              <img src="img/dropdown-btn.svg" alt="icon dropdown" />
             </div>
-
-          </div>
-
-        </div>
-      </div>
-
-      <div id="dropdown-user" class="user-dropdown-content">
-        <div class="dropdown-user-container">
-          <a href="user-account.html">
-            <div class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"><img src="img/acc-user.svg"
-                alt="icon account"><span>Manage My Account</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-mallbag.svg" alt="mallbag"><span>My
-                Order</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-cancel.svg" alt="Cancellations"><span>My
-                Cancellations</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-reviews.svg" alt="reviews"><span>My
-                Reviews</span></div>
-          </a>
-          <a href="#">
-            <div class="dropdown-user__menu-item"><img src="img/dropdown-user-logout.svg"
-                alt="logout"><span>Logout</span>
+            <div class="lang_dropdown-options">
+              <div class="language">English</div>
+              <div class="language">Russian</div>
+              <div class="language">Uzbek</div>
+              <div class="language">French</div>
             </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <div class="divider"></div>
-  <main>
-    <section class="category-and-banner">
-      <div class="category">
-        <ul>
-          <li onclick="dropdownWoman()" class="categories dropdown category-flex">
-            <span>Woman’s Fashion</span>
-            <span class="category-dropdown-btn"><img src="img/category dropdown-btn.svg" alt="icon dropdown"></span>
+          </div>
 
-          </li>
-
-          <div id="dropdown-woman" class="dropdown-content woman">
-            <ul>
-              <li class="category-dropdown_heading"><a href="#">Woman's Fashion</a></li>
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Clothing</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Sports</a></li>
-              <li><a href="#">Brands</a></li>
-              <li><a href="#">Plus Size</a></li>
-            </ul>
-          </div>
-          <li onclick="dropdownMan()" class="categories dropdown category-flex">
-            <span>Men’s Fashion</span>
-            <span class="category-dropdown-btn"><img src="img/category dropdown-btn.svg" alt="icon dropdown"></span>
-          </li>
-          <div id="dropdown-man" class="dropdown-content man">
-            <ul>
-              <li class="category-dropdown_heading"><a href="#">Man's Fashion</a></li>
-              <li><a href="#">Shoes</a></li>
-              <li><a href="#">Clothing</a></li>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Sports</a></li>
-              <li><a href="#">Brands</a></li>
-              <li><a href="#">Plus Size</a></li>
-            </ul>
-          </div>
-          <li class="categories"><a href="#">Electronics</a></li>
-          <li class="categories"><a href="#">Home & Lifestyle</a></li>
-          <li class="categories"><a href="#">Medicine</a></li>
-          <li class="categories"><a href="#">Sports & Outdoor</a></li>
-          <li class="categories"><a href="#">Baby’s & Toys</a></li>
-          <li class="categories"><a href="#">Groceries & Pets</a></li>
-          <li class="categories"><a href="#">Health & Beauty</a></li>
-        </ul>
-      </div>
-      <div class="banner">
-        <div class="banner__promo">
-          <div>
-            <img src="img/banner_apple-logo.svg" alt="apple-logo"><span>iPhone 14 Series</span>
-          </div>
-          <p>Up to 10% <br> off Voucher</p>
           <p>
-            <a href="product0017.html"><span>Shop Now</span> <img src="img/banner-arrow-shop-now.svg"
-                alt="link shop now"></a>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF
+            50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
           </p>
         </div>
-        <div class="banner__img">
-          <img src="img/banner.png" alt="iphone 14">
-        </div>
-        <div class="banner__selectors">
-          <div class="radio">
-            <input class="custom-radio" type="radio" id="one" name="banner__selectors" value="one">
-            <label for="one"></label>
-          </div>
-
-          <div class="radio">
-            <input class="custom-radio" type="radio" id="two" name="banner__selectors" value="two">
-            <label for="two"></label>
-          </div>
-
-          <div class="radio">
-            <input class="custom-radio" type="radio" id="three" name="banner__selectors" value="three" checked>
-            <label for="three"></label>
-          </div>
-
-          <div class="radio">
-            <input class="custom-radio" type="radio" id="four" name="banner__selectors" value="four">
-            <label for="four"></label>
-          </div>
-
-          <div class="radio">
-            <input class="custom-radio" type="radio" id="five" name="banner__selectors" value="five">
-            <label for="five"></label>
-          </div>
-        </div>
       </div>
-
-    </section>
-    <section class="today">
-      <div class="today__header_grid">
-        <div class="section-headers">
-          <h1 class="red-header">
-            <div class="red-header__brick"></div> <span>Today's</span>
-          </h1>
-          <h1 class="black-header">Flash Sales</h1>
-        </div>
-        <div class="countdown">
-          <div class="countdown__grid">
-            <div class="countdown__days countdown__words">Days</div>
-            <div class="countdown__hours countdown__words">Hours</div>
-            <div class="countdown__minutes countdown__words">Minutes</div>
-            <div class="countdown__seconds countdown__words">Seconds</div>
-            <div class="countdown__numbers">03</div>
-            <div class="colon colon1"><img src="img/section_today/countdown_colon.svg" alt="colon"></div>
-            <div class="countdown__numbers">23</div>
-            <div class="colon colon2"><img src="img/section_today/countdown_colon.svg" alt="colon"></div>
-            <div class=" countdown__numbers">19</div>
-            <div class="colon colon3"><img src="img/section_today/countdown_colon.svg" alt="colon"></div>
-            <div class=" countdown__numbers">56</div>
+      <div class="heading">
+        <div class="container heading__grid">
+          <div class="logo">
+            <h1 class="brand">Exclusive</h1>
           </div>
-        </div>
-        <div class="slider-btns">
-          <div class="slider-btn left">
-            <img src="img/arrow-left.svg" alt="arrow left">
+          <div class="heading__menu">
+            <ul class="heading__links_flex">
+              <li class="heading__link">
+                <a class="current" href="#">Home</a>
+              </li>
+              <li class="heading__link"><a href="contacts.html">Contact</a></li>
+              <li class="heading__link"><a href="about.html">About</a></li>
+              <li class="heading__link"><a href="signup.html">Sign Up</a></li>
+            </ul>
           </div>
-          <div class="slider-btn right">
-            <img src="img/arrow-right.svg" alt="arrow right">
-          </div>
-        </div>
-      </div>
-      <div class="goods">
-        <div class="goods_container">
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-40%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0001.png" alt="gamepad">
-              </div>
+          <div class="search-box-and-acc-module">
+            <div class="search-container">
+              <input
+                class="search-box"
+                type="search"
+                name="search"
+                placeholder="What are you looking for?"
+              />
+              <button class="search-button">
+                <img src="img/search-glass.svg" alt="search glass" />
+              </button>
             </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">HAVIT HV-G92 Gamepad</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">120</span>
-                <span class="product__prices_old">200</span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4.5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">88</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-35%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0002.png" alt="keyboard">
-
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">AK-900 Wired Keyboard</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">960</span>
-                <span class="product__prices_old">1477</span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">75</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0003.png" alt="monitor">
-
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">IPS LCD Gaming Monitor</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">370</span>
-                <span class="product__prices_old">529</span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">99</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-25%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0004.png" alt="chair">
-
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">S-Series Comfort Chair</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">375</span>
-                <span class="product__prices_old">500</span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4.5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">99</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="red-btn">
-          <span>View All Products</span>
-        </div>
-      </div>
-    </section>
-    <div class="divider divider-smaller"></div>
-
-    <section class="section-categories">
-      <div class="section-categories__header_grid">
-        <div class="section-headers">
-          <h1 class="red-header">
-            <div class="red-header__brick"></div> <span>Categories</span>
-          </h1>
-          <h1 class="black-header">Browse By Category</h1>
-        </div>
-        <div class="slider-btns">
-          <div class="slider-btn left">
-            <img src="img/arrow-left.svg" alt="arrow left">
-          </div>
-          <div class="slider-btn right">
-            <img src="img/arrow-right.svg" alt="arrow right">
-          </div>
-        </div>
-      </div>
-      <div class="section-categories__categories-slider">
-        <button class="section-categories__category section-categories__category_phones ">
-          <h4 class="section-categories__category_heading">Phones</h4>
-        </button>
-        <button class="section-categories__category section-categories__category_computers">
-          <h4 class="section-categories__category_heading">Computers</h4>
-        </button>
-        <button class="section-categories__category section-categories__category_smart-watch">
-          <h4 class="section-categories__category_heading">SmartWatch</h4>
-        </button>
-        <button class="section-categories__category section-categories__category_camera">
-          <h4 class="section-categories__category_heading">Camera</h4>
-        </button>
-        <button class="section-categories__category section-categories__category_headphones">
-          <h4 class="section-categories__category_heading">HeadPhones</h4>
-        </button>
-        <button class="section-categories__category section-categories__category_gaming">
-          <h4 class="section-categories__category_heading">Gaming</h4>
-        </button>
-      </div>
-    </section>
-    <div class="divider divider-smaller"></div>
-
-    <section class="section-month">
-      <div class="section-month__header_grid">
-        <div class="section-headers">
-          <h1 class="red-header">
-            <div class="red-header__brick"></div> <span>This Month</span>
-          </h1>
-          <h1 class="black-header">Best Selling Products</h1>
-        </div>
-
-        <div class="red-btn">
-          <span>View All</span>
-        </div>
-      </div>
-      <div class="goods">
-        <div class="goods_container">
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-40%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0005.png" alt="gamepad">
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">The north coat</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">260</span>
-                <span class="product__prices_old">360</span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">65</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-35%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0006.png" alt="keyboard">
-
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">Gucci duffle bag</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">960</span>
-                <span class="product__prices_old">1160</span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4.5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">65</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0007.png" alt="monitor">
-
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">RGB liquid CPU Cooler</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">160</span>
-                <span class="product__prices_old">170</span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4.5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">65</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">-25%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0008.png" alt="chair">
-
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">Small BookSelf</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">360</span>
-                <!--<span class="product__prices_old"></span>-->
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">65</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="red-btn">
-          <span>View All Products</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-banner-middle-page">
-      <div class="section-banner-middle-page_wrapper">
-        <h2 class="section-banner-middle-page__heading">Categories</h2>
-        <p class="section-banner-middle-page__promo">Enhance Your Music Experience</p>
-        <div class="section-banner-middle-page__countdown">
-          <div class="section-banner-middle-page__countdown_items">
-            <p class="section-banner-middle-page__countdown_numbers">05</p>
-            <p class="section-banner-middle-page__countdown_measures">Days</p>
-          </div>
-          <div class="section-banner-middle-page__countdown_items">
-            <p class="section-banner-middle-page__countdown_numbers">23</p>
-            <p class="section-banner-middle-page__countdown_measures">Hours</p>
-          </div>
-          <div class="section-banner-middle-page__countdown_items">
-            <p class="section-banner-middle-page__countdown_numbers">59</p>
-            <p class="section-banner-middle-page__countdown_measures">Minutes</p>
-          </div>
-          <div class="section-banner-middle-page__countdown_items">
-            <p class="section-banner-middle-page__countdown_numbers">23</p>
-            <p class="section-banner-middle-page__countdown_measures">Seconds</p>
-          </div>
-        </div>
-        <button onclick="document.location='product0017.html'" class="red-btn green">Buy Now!</button>
-        <div class="section-banner-middle-page__photo-wrapper">
-          <img class="section-banner-middle-page__photo" src="img/banner-middle-page/JBL_BOOMBOX_2_HERO.png"
-            alt="boombox"></img>
-          <!--<img class="section-banner-middle-page__substrate" src="img/banner-middle-page/Ellipse 23.svg"></img>-->
-        </div>
-      </div>
-    </section>
-
-    <section class="section-our-products">
-      <div class="section-our-products__header_grid">
-        <div class="section-headers">
-          <h1 class="red-header">
-            <div class="red-header__brick"></div> <span>Our Products</span>
-          </h1>
-          <h1 class="black-header">Explore Our Products</h1>
-        </div>
-        <div class="slider-btns">
-          <div class="slider-btn left">
-            <img src="img/arrow-left.svg" alt="arrow left">
-          </div>
-          <div class="slider-btn right">
-            <img src="img/arrow-right.svg" alt="arrow right">
-          </div>
-        </div>
-      </div>
-      <div class="goods">
-        <div class="goods_container">
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0009.png" alt="food for dog">
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">Brees Dry Dog Food</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">100</span>
-                <span class="product__prices_old"></span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="3" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">35</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0010.png" alt="photocamera">
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">CANON EOS DSLR Camera</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">360</span>
-                <span class="product__prices_old"></span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">95</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0011.png" alt="asus laptop">
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">ASUS FHD Gaming Laptop</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">700</span>
-                <span class="product__prices_old"></span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">325</span>
-              </p>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0012.png" alt="Curology Product Set">
-
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">Curology Product Set</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">500</span>
-                <span class="product__prices_old"></span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">145</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="goods_container secondary">
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">30%</div>
-                <div class="product__new">NEW</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0013.png" alt="Kids Electric Car">
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">Kids Electric Car</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">960</span>
-                <span class="product__prices_old"></span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">65</span>
-              </p>
-
-            </div>
-            <div class="product__color-selector">
-              <div class="product_color-selector_main">
-                <input class="invisible" type="radio" id="product0013-red" name="product0013-color" value="red" checked>
-                <label for="product0013-red">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_red"></div>
+            <div class="acc-module-container-wrapper">
+              <div class="acc-module-container">
+                <button
+                  onclick="document.location='wishlist.html'"
+                  class="acc-module_wishlist"
+                ></button>
+                <button
+                  onclick="document.location='cart.html'"
+                  class="acc-module_cart"
+                ></button>
+                <button class="acc-module_user dropdown"></button>
+                <div
+                  id="dropdown-user"
+                  class="user-dropdown-content"
+                  style="display: none"
+                >
+                  <div class="dropdown-user-container">
+                    <a href="user-account.html">
+                      <div
+                        class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"
+                      >
+                        <img src="img/acc-user.svg" alt="icon account" /><span
+                          >Manage My Account</span
+                        >
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-mallbag.svg"
+                          alt="mallbag"
+                        /><span>My Order</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-cancel.svg"
+                          alt="Cancellations"
+                        /><span>My Cancellations</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-reviews.svg"
+                          alt="reviews"
+                        /><span>My Reviews</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-logout.svg"
+                          alt="logout"
+                        /><span>Logout</span>
+                      </div>
+                    </a>
                   </div>
-                </label>
-              </div>
-              <div class="product_color-selector_secondary">
-                <input class="invisible" type="radio" id="product0013-carmine-pink" name="product0013-color"
-                  value="carmine-pink">
-                <label for="product0013-carmine-pink">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_carmine-pink"></div>
-                  </div>
-                </label>
+                </div>
               </div>
             </div>
           </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
+        </div>
+      </div>
+    </header>
+    <div class="divider"></div>
+    <main>
+      <section class="category-and-banner">
+        <div class="category">
+          <ul>
+            <li class="categories dropdown dropdownWomanCategory category-flex">
+              <span>Woman’s Fashion</span>
+              <span class="category-dropdown-btn"
+                ><img src="img/category dropdown-btn.svg" alt="icon dropdown"
+              /></span>
+            </li>
+
+            <div style="display: none" id="dropdown-woman" class="dropdown-content woman">
+              <ul>
+                <li class="category-dropdown_heading">
+                  <a href="#">Woman's Fashion</a>
+                </li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Plus Size</a></li>
+              </ul>
+            </div>
+            <li class="categories dropdown dropdownManCategory category-flex">
+              <span>Men’s Fashion</span>
+              <span class="category-dropdown-btn"
+                ><img src="img/category dropdown-btn.svg" alt="icon dropdown"
+              /></span>
+            </li>
+            <div style="display: none" id="dropdown-man" class="dropdown-content man">
+              <ul>
+                <li class="category-dropdown_heading">
+                  <a href="#">Man's Fashion</a>
+                </li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Plus Size</a></li>
+              </ul>
+            </div>
+            <li class="categories"><a href="#">Electronics</a></li>
+            <li class="categories"><a href="#">Home & Lifestyle</a></li>
+            <li class="categories"><a href="#">Medicine</a></li>
+            <li class="categories"><a href="#">Sports & Outdoor</a></li>
+            <li class="categories"><a href="#">Baby’s & Toys</a></li>
+            <li class="categories"><a href="#">Groceries & Pets</a></li>
+            <li class="categories"><a href="#">Health & Beauty</a></li>
+          </ul>
+        </div>
+        <div class="banner">
+          <div class="banner__promo">
+            <div>
+              <img src="img/banner_apple-logo.svg" alt="apple-logo" /><span
+                >iPhone 14 Series</span
+              >
+            </div>
+            <p>
+              Up to 10% <br />
+              off Voucher
+            </p>
+            <p>
+              <a href="product0017.html"
+                ><span>Shop Now</span>
+                <img src="img/banner-arrow-shop-now.svg" alt="link shop now"
+              /></a>
+            </p>
+          </div>
+          <div class="banner__img">
+            <img src="img/banner.png" alt="iphone 14" />
+          </div>
+          <div class="banner__selectors">
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="one"
+                name="banner__selectors"
+                value="one"
+              />
+              <label for="one"></label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="two"
+                name="banner__selectors"
+                value="two"
+              />
+              <label for="two"></label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="three"
+                name="banner__selectors"
+                value="three"
+                checked
+              />
+              <label for="three"></label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="four"
+                name="banner__selectors"
+                value="four"
+              />
+              <label for="four"></label>
+            </div>
+
+            <div class="radio">
+              <input
+                class="custom-radio"
+                type="radio"
+                id="five"
+                name="banner__selectors"
+                value="five"
+              />
+              <label for="five"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="today">
+        <div class="today__header_grid">
+          <div class="section-headers">
+            <h1 class="red-header">
+              <div class="red-header__brick"></div>
+              <span>Today's</span>
+            </h1>
+            <h1 class="black-header">Flash Sales</h1>
+          </div>
+          <div class="countdown">
+            <div class="countdown__grid">
+              <div class="countdown__days countdown__words">Days</div>
+              <div class="countdown__hours countdown__words">Hours</div>
+              <div class="countdown__minutes countdown__words">Minutes</div>
+              <div class="countdown__seconds countdown__words">Seconds</div>
+              <div class="countdown__numbers">03</div>
+              <div class="colon colon1">
+                <img src="img/section_today/countdown_colon.svg" alt="colon" />
               </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0014.png" alt="Jr. Zoom Soccer Cleats">
+              <div class="countdown__numbers">23</div>
+              <div class="colon colon2">
+                <img src="img/section_today/countdown_colon.svg" alt="colon" />
+              </div>
+              <div class="countdown__numbers">19</div>
+              <div class="colon colon3">
+                <img src="img/section_today/countdown_colon.svg" alt="colon" />
+              </div>
+              <div class="countdown__numbers">56</div>
+            </div>
+          </div>
+          <div class="slider-btns">
+            <div class="slider-btn left">
+              <img src="img/arrow-left.svg" alt="arrow left" />
+            </div>
+            <div class="slider-btn right">
+              <img src="img/arrow-right.svg" alt="arrow right" />
+            </div>
+          </div>
+        </div>
+        <div class="goods">
+          <div class="goods_container">
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-40%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img src="img/product_photos/product0001.png" alt="gamepad" />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  HAVIT HV-G92 Gamepad
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">120</span>
+                  <span class="product__prices_old">200</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4.5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">88</span>
+                </p>
               </div>
             </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">Jr. Zoom Soccer Cleats</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">1160</span>
-                <span class="product__prices_old"></span>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-35%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0002.png"
+                    alt="keyboard"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  AK-900 Wired Keyboard
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">960</span>
+                  <span class="product__prices_old">1477</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">75</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img src="img/product_photos/product0003.png" alt="monitor" />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  IPS LCD Gaming Monitor
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">370</span>
+                  <span class="product__prices_old">529</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">99</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-25%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img src="img/product_photos/product0004.png" alt="chair" />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  S-Series Comfort Chair
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">375</span>
+                  <span class="product__prices_old">500</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4.5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">99</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="red-btn">
+            <span>View All Products</span>
+          </div>
+        </div>
+      </section>
+      <div class="divider divider-smaller"></div>
+
+      <section class="section-categories">
+        <div class="section-categories__header_grid">
+          <div class="section-headers">
+            <h1 class="red-header">
+              <div class="red-header__brick"></div>
+              <span>Categories</span>
+            </h1>
+            <h1 class="black-header">Browse By Category</h1>
+          </div>
+          <div class="slider-btns">
+            <div class="slider-btn left">
+              <img src="img/arrow-left.svg" alt="arrow left" />
+            </div>
+            <div class="slider-btn right">
+              <img src="img/arrow-right.svg" alt="arrow right" />
+            </div>
+          </div>
+        </div>
+        <div class="section-categories__categories-slider">
+          <button
+            class="section-categories__category section-categories__category_phones"
+          >
+            <h4 class="section-categories__category_heading">Phones</h4>
+          </button>
+          <button
+            class="section-categories__category section-categories__category_computers"
+          >
+            <h4 class="section-categories__category_heading">Computers</h4>
+          </button>
+          <button
+            class="section-categories__category section-categories__category_smart-watch"
+          >
+            <h4 class="section-categories__category_heading">SmartWatch</h4>
+          </button>
+          <button
+            class="section-categories__category section-categories__category_camera"
+          >
+            <h4 class="section-categories__category_heading">Camera</h4>
+          </button>
+          <button
+            class="section-categories__category section-categories__category_headphones"
+          >
+            <h4 class="section-categories__category_heading">HeadPhones</h4>
+          </button>
+          <button
+            class="section-categories__category section-categories__category_gaming"
+          >
+            <h4 class="section-categories__category_heading">Gaming</h4>
+          </button>
+        </div>
+      </section>
+      <div class="divider divider-smaller"></div>
+
+      <section class="section-month">
+        <div class="section-month__header_grid">
+          <div class="section-headers">
+            <h1 class="red-header">
+              <div class="red-header__brick"></div>
+              <span>This Month</span>
+            </h1>
+            <h1 class="black-header">Best Selling Products</h1>
+          </div>
+
+          <div class="red-btn">
+            <span>View All</span>
+          </div>
+        </div>
+        <div class="goods">
+          <div class="goods_container">
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-40%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img src="img/product_photos/product0005.png" alt="gamepad" />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  The north coat
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">260</span>
+                  <span class="product__prices_old">360</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">65</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-35%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0006.png"
+                    alt="keyboard"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  Gucci duffle bag
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">960</span>
+                  <span class="product__prices_old">1160</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4.5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">65</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img src="img/product_photos/product0007.png" alt="monitor" />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  RGB liquid CPU Cooler
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">160</span>
+                  <span class="product__prices_old">170</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4.5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">65</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">-25%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img src="img/product_photos/product0008.png" alt="chair" />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  Small BookSelf
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">360</span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">65</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="red-btn">
+            <span>View All Products</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-banner-middle-page">
+        <div class="section-banner-middle-page_wrapper">
+          <h2 class="section-banner-middle-page__heading">Categories</h2>
+          <p class="section-banner-middle-page__promo">
+            Enhance Your Music Experience
+          </p>
+          <div class="section-banner-middle-page__countdown">
+            <div class="section-banner-middle-page__countdown_items">
+              <p class="section-banner-middle-page__countdown_numbers">05</p>
+              <p class="section-banner-middle-page__countdown_measures">Days</p>
+            </div>
+            <div class="section-banner-middle-page__countdown_items">
+              <p class="section-banner-middle-page__countdown_numbers">23</p>
+              <p class="section-banner-middle-page__countdown_measures">
+                Hours
               </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">35</span>
+            </div>
+            <div class="section-banner-middle-page__countdown_items">
+              <p class="section-banner-middle-page__countdown_numbers">59</p>
+              <p class="section-banner-middle-page__countdown_measures">
+                Minutes
               </p>
             </div>
-            <div class="product__color-selector">
-              <div class="product_color-selector_main">
-                <input class="invisible" type="radio" id="product0014-immature-yellow" name="product0014-color"
-                  value="immature-yellow" checked>
-                <label for="product0014-immature-yellow">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_immature-yellow"></div>
-                  </div>
-                </label>
-              </div>
-              <div class="product_color-selector_secondary">
-                <input class="invisible" type="radio" id="product0014-carmine-pink" name="product0014-color"
-                  value="carmine-pink">
-                <label for="product0014-carmine-pink">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_carmine-pink"></div>
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <!--<div class="product__discount">30%</div>-->
-                <div class="product__new">NEW</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-              </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0015.png" alt="GP11 Shooter USB Gamepad">
-              </div>
-            </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">GP11 Shooter USB Gamepad</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">660</span>
-                <span class="product__prices_old"></span>
-              </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4.5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">55</span>
+            <div class="section-banner-middle-page__countdown_items">
+              <p class="section-banner-middle-page__countdown_numbers">23</p>
+              <p class="section-banner-middle-page__countdown_measures">
+                Seconds
               </p>
             </div>
-            <div class="product__color-selector">
-              <div class="product_color-selector_main">
-                <input class="invisible" type="radio" id="product0015-black" name="product0015-color" value="black"
-                  checked>
-                <label for="product0015-black">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_black"></div>
+          </div>
+          <button
+            onclick="document.location='product0017.html'"
+            class="red-btn green"
+          >
+            Buy Now!
+          </button>
+          <div class="section-banner-middle-page__photo-wrapper">
+            <img
+              class="section-banner-middle-page__photo"
+              src="img/banner-middle-page/JBL_BOOMBOX_2_HERO.png"
+              alt="boombox"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-our-products">
+        <div class="section-our-products__header_grid">
+          <div class="section-headers">
+            <h1 class="red-header">
+              <div class="red-header__brick"></div>
+              <span>Our Products</span>
+            </h1>
+            <h1 class="black-header">Explore Our Products</h1>
+          </div>
+          <div class="slider-btns">
+            <div class="slider-btn left">
+              <img src="img/arrow-left.svg" alt="arrow left" />
+            </div>
+            <div class="slider-btn right">
+              <img src="img/arrow-right.svg" alt="arrow right" />
+            </div>
+          </div>
+        </div>
+        <div class="goods">
+          <div class="goods_container">
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
                   </div>
-                </label>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0009.png"
+                    alt="food for dog"
+                  />
+                </div>
               </div>
-              <div class="product_color-selector_secondary">
-                <input class="invisible" type="radio" id="product0015-carmine-pink" name="product0015-color"
-                  value="carmine-pink">
-                <label for="product0015-carmine-pink">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_carmine-pink"></div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  Brees Dry Dog Food
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">100</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="3" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">35</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
                   </div>
-                </label>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0010.png"
+                    alt="photocamera"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  CANON EOS DSLR Camera
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">360</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">95</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0011.png"
+                    alt="asus laptop"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  ASUS FHD Gaming Laptop
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">700</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">325</span>
+                </p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0012.png"
+                    alt="Curology Product Set"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  Curology Product Set
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">500</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">145</span>
+                </p>
               </div>
             </div>
           </div>
-          <div class="product">
-            <div class="product__card">
-              <div class="product__card_grid">
-                <div class="product__discount">30%</div>
-                <div class="product__wishlist"></div>
-                <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
+          <div class="goods_container secondary">
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">30%</div>
+                  <div class="product__new">NEW</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0013.png"
+                    alt="Kids Electric Car"
+                  />
+                </div>
               </div>
-              <div class="product__add-to-cart">Add To Cart</div>
-              <div class="product__photo"><img src="img/product_photos/product0016.png" alt="Quilted Satin Jacket">
-
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  Kids Electric Car
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">960</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">65</span>
+                </p>
+              </div>
+              <div class="product__color-selector">
+                <div class="product_color-selector_main">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="product0013-red"
+                    name="product0013-color"
+                    value="red"
+                    checked
+                  />
+                  <label for="product0013-red">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_red"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="product_color-selector_secondary">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="product0013-carmine-pink"
+                    name="product0013-color"
+                    value="carmine-pink"
+                  />
+                  <label for="product0013-carmine-pink">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_carmine-pink"></div>
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
-            <div class="product__description">
-              <h4 onclick="document.location='product0017.html'" class="product__name">Quilted Satin Jacket</h4>
-              <p class="product__prices">
-                <span class="product__prices_current">660</span>
-                <span class="product__prices_old"></span>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0014.png"
+                    alt="Jr. Zoom Soccer Cleats"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  Jr. Zoom Soccer Cleats
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">1160</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">35</span>
+                </p>
+              </div>
+              <div class="product__color-selector">
+                <div class="product_color-selector_main">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="product0014-immature-yellow"
+                    name="product0014-color"
+                    value="immature-yellow"
+                    checked
+                  />
+                  <label for="product0014-immature-yellow">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_immature-yellow"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="product_color-selector_secondary">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="product0014-carmine-pink"
+                    name="product0014-color"
+                    value="carmine-pink"
+                  />
+                  <label for="product0014-carmine-pink">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_carmine-pink"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__new">NEW</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0015.png"
+                    alt="GP11 Shooter USB Gamepad"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  GP11 Shooter USB Gamepad
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">660</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4.5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">55</span>
+                </p>
+              </div>
+              <div class="product__color-selector">
+                <div class="product_color-selector_main">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="product0015-black"
+                    name="product0015-color"
+                    value="black"
+                    checked
+                  />
+                  <label for="product0015-black">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_black"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="product_color-selector_secondary">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="product0015-carmine-pink"
+                    name="product0015-color"
+                    value="carmine-pink"
+                  />
+                  <label for="product0015-carmine-pink">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_carmine-pink"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__card">
+                <div class="product__card_grid">
+                  <div class="product__discount">30%</div>
+                  <div class="product__wishlist"></div>
+                  <div class="product__details">
+                    <img
+                      src="img/product_details.svg"
+                      alt="button quick view"
+                    />
+                  </div>
+                </div>
+                <div class="product__add-to-cart">Add To Cart</div>
+                <div class="product__photo">
+                  <img
+                    src="img/product_photos/product0016.png"
+                    alt="Quilted Satin Jacket"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <h4
+                  onclick="document.location='product0017.html'"
+                  class="product__name"
+                >
+                  Quilted Satin Jacket
+                </h4>
+                <p class="product__prices">
+                  <span class="product__prices_current">660</span>
+                  <span class="product__prices_old"></span>
+                </p>
+                <p class="product__rating">
+                  <span class="product__rating_stars_masked">
+                    <progress value="4.5" max="5"></progress>
+                    <img src="img/five_star_mask_bigsize.png" alt="" />
+                  </span>
+                  <span class="product__rating_reviews">55</span>
+                </p>
+              </div>
+              <div class="product__color-selector">
+                <div class="product_color-selector_main">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="product0016-turquoise-green"
+                    name="product0016-color"
+                    value="turquoise-green"
+                    checked
+                  />
+                  <label for="product0016-turquoise-green">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_turquoise-green"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="product_color-selector_secondary">
+                  <input
+                    class="invisible"
+                    type="radio"
+                    id="carmine-pink"
+                    name="product0016-color"
+                    value="carmine-pink"
+                  />
+                  <label for="carmine-pink">
+                    <div class="color-selector__canvas">
+                      <div class="product_color-selector_carmine-pink"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="red-btn">
+            <span>View All Products</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-featured">
+        <div class="section-featured__header_grid">
+          <div class="section-headers">
+            <h1 class="red-header">
+              <div class="red-header__brick"></div>
+              <span>Featured</span>
+            </h1>
+            <h1 class="black-header">New Arrival</h1>
+          </div>
+        </div>
+        <div class="section-featured__tiles">
+          <div class="section-featured__tiles_big">
+            <img src="img/section_featured/big.png" alt="playstation 5" />
+            <div class="section-featured__product-info">
+              <h2 class="section-featured__product-name">PlayStation 5</h2>
+              <p class="section-featured__product-description">
+                Black and White version of the PS5 coming out on sale.
               </p>
-              <p class="product__rating">
-                <span class="product__rating_stars_masked">
-                  <progress value="4.5" max="5"></progress>
-                  <img src="img/five_star_mask_bigsize.png" alt="">
-                </span>
-                <span class="product__rating_reviews">55</span>
+              <p class="section-featured__product-buy-link">
+                <a href="product0017.html">Shop Now</a>
               </p>
             </div>
-            <div class="product__color-selector">
-              <div class="product_color-selector_main">
-                <input class="invisible" type="radio" id="product0016-turquoise-green" name="product0016-color"
-                  value="turquoise-green" checked>
-                <label for="product0016-turquoise-green">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_turquoise-green"></div>
-                  </div>
-                </label>
-              </div>
-              <div class="product_color-selector_secondary">
-                <input class="invisible" type="radio" id="carmine-pink" name="product0016-color" value="carmine-pink">
-                <label for="carmine-pink">
-                  <div class="color-selector__canvas">
-                    <div class="product_color-selector_carmine-pink"></div>
-                  </div>
-                </label>
-              </div>
+          </div>
+          <div class="section-featured__tiles_average">
+            <img src="img/section_featured/average.png" alt="Woman in hat" />
+            <div class="section-featured__product-info">
+              <h2 class="section-featured__product-name">
+                Women’s Collections
+              </h2>
+              <p class="section-featured__product-description">
+                Featured woman collections that give you another vibe.
+              </p>
+              <p class="section-featured__product-buy-link">
+                <a href="product0017.html">Shop Now</a>
+              </p>
+            </div>
+          </div>
+          <div class="section-featured__tiles_small-1">
+            <img
+              src="img/section_featured/small-1.png"
+              alt="Speakers by amazon"
+            />
+            <div class="section-featured__product-info">
+              <h2 class="section-featured__product-name">Speakers</h2>
+              <p class="section-featured__product-description">
+                Amazon wireless speakers
+              </p>
+              <p class="section-featured__product-buy-link">
+                <a href="product0017.html">Shop Now</a>
+              </p>
+            </div>
+          </div>
+          <div class="section-featured__tiles_small-2">
+            <img src="img/section_featured/small-2.png" alt="Gucci parfume" />
+            <div class="section-featured__product-info">
+              <h2 class="section-featured__product-name">Perfume</h2>
+              <p class="section-featured__product-description">
+                GUCCI INTENSE OUD EDP
+              </p>
+              <p class="section-featured__product-buy-link">
+                <a href="product0017.html">Shop Now</a>
+              </p>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="red-btn">
-          <span>View All Products</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-featured">
-      <div class="section-featured__header_grid">
-        <div class="section-headers">
-          <h1 class="red-header">
-            <div class="red-header__brick"></div> <span>Featured</span>
-          </h1>
-          <h1 class="black-header">New Arrival</h1>
-        </div>
-      </div>
-      <div class="section-featured__tiles">
-        <div class="section-featured__tiles_big">
-          <img src="img/section_featured/big.png" alt="playstation 5">
-          <div class="section-featured__product-info">
-            <h2 class="section-featured__product-name">PlayStation 5</h2>
-            <p class="section-featured__product-description">Black and White version of the PS5 coming out on sale.</p>
-            <p class="section-featured__product-buy-link"><a href="product0017.html">Shop Now</a></p>
+      <section class="section-services">
+        <div class="section-services__flex-wrapper">
+          <div class="section-services__delivery">
+            <div class="section-services__icon">
+              <img
+                src="img/section-services/icon-delivery.svg"
+                alt="icon delivery"
+              />
+            </div>
+            <h2>FREE AND FAST DELIVERY</h2>
+            <p>Free delivery for all orders over $140</p>
+          </div>
+          <div class="section-services__support">
+            <div class="section-services__icon">
+              <img
+                src="img/section-services/icon-support.svg"
+                alt="icon support"
+              />
+            </div>
+            <h2>24/7 CUSTOMER SERVICE</h2>
+            <p>Friendly 24/7 customer support</p>
+          </div>
+          <div class="section-services__money-back">
+            <div class="section-services__icon">
+              <img
+                src="img/section-services/icon-money-back.svg"
+                alt="icon money-back"
+              />
+            </div>
+            <h2>MONEY BACK GUARANTEE</h2>
+            <p>We return money within 30 days</p>
           </div>
         </div>
-        <div class="section-featured__tiles_average">
-          <img src="img/section_featured/average.png" alt="Woman in hat">
-          <div class="section-featured__product-info">
-            <h2 class="section-featured__product-name">Women’s Collections</h2>
-            <p class="section-featured__product-description">Featured woman collections that give you another vibe.</p>
-            <p class="section-featured__product-buy-link"><a href="product0017.html">Shop Now</a></p>
+      </section>
+      <div class="back-btn_wrapper">
+        <a href="#top" class="back-btn">
+          <img src="img/arrow-left.svg" alt="btn back" />
+        </a>
+      </div>
+      -->
+    </main>
+    <footer class="footer">
+      <div class="footer__container-flex-grid">
+        <div class="footer__subscribe">
+          <div class="logo">
+            <h1 class="brand">Exclusive</h1>
+          </div>
+          <h2 class="footer__item-heading">Subscribe</h2>
+          <p class="footer__link">Get 10% off your first order</p>
+          <div class="footer__subscribe_form-container">
+            <input
+              type="text"
+              class="footer__subscribe_input"
+              placeholder="Enter your email"
+              name="mail"
+              required
+            />
+            <button
+              type="submit"
+              name="submit-btn"
+              class="footer__subscribe_submit-btn"
+            >
+              <img src="img/footer/icon-send.svg" alt="submit button" />
+            </button>
           </div>
         </div>
-        <div class="section-featured__tiles_small-1">
-          <img src="img/section_featured/small-1.png" alt="Speakers by amazon">
-          <div class="section-featured__product-info">
-            <h2 class="section-featured__product-name">Speakers</h2>
-            <p class="section-featured__product-description">Amazon wireless speakers</p>
-            <p class="section-featured__product-buy-link"><a href="product0017.html">Shop Now</a></p>
+
+        <div class="footer__support">
+          <h2 class="footer__item-heading">Support</h2>
+          <p class="footer__link">
+            111 Bijoy sarani, Dhaka,<br />
+            DH 1515, Bangladesh.
+          </p>
+          <p class="footer__link">
+            <a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
+          </p>
+          <p class="footer__link">
+            <a href="tel:+88015888889999">+88015-88888-9999</a>
+          </p>
+        </div>
+
+        <div class="footer__account">
+          <h2 class="footer__item-heading">Account</h2>
+          <p class="footer__link"><a href="user-account.html">My Account</a></p>
+          <p class="footer__link"><a href="signup.html">Login / Register</a></p>
+          <p class="footer__link"><a href="cart.html">Cart</a></p>
+          <p class="footer__link"><a href="wishlist.html">Wishlist</a></p>
+          <p class="footer__link"><a href="index.html">Shop</a></p>
+        </div>
+
+        <div class="footer__quick-link">
+          <h2 class="footer__item-heading">Quick Link</h2>
+          <p class="footer__link"><a href="#bottom">Privacy Policy</a></p>
+          <p class="footer__link"><a href="#">Terms Of Use</a></p>
+          <p class="footer__link"><a href="#">FAQ</a></p>
+          <p class="footer__link"><a href="contacts.html">Contact</a></p>
+        </div>
+
+        <div class="footer__download-app">
+          <h2 class="footer__item-heading">Download App</h2>
+          <p class="footer__text">Save $3 with App New User Only</p>
+          <div class="footer__download-links_grid-container">
+            <div class="footer__download-app_qrcode">
+              <img
+                src="img/footer/footer-download_qrcode.svg"
+                alt="download qr code"
+              />
+            </div>
+            <div class="footer_download-app_google-play">
+              <img
+                src="img/footer/footer-download_google-play.png"
+                alt="google play market"
+              />
+            </div>
+            <div class="footer_download-app_apple-store">
+              <img
+                src="img/footer/footer-download_apple-store.png"
+                alt="apple store"
+              />
+            </div>
+          </div>
+          <div class="footer__social_flex-container">
+            <img src="img/footer/Icon-Facebook.svg" alt="facebook" />
+            <img src="img/footer/Icon-Twitter.png" alt="twitter" />
+            <img src="img/footer/icon-instagram.svg" alt="instagram" />
+            <img src="img/footer/Icon-Linkedin.svg" alt="linked in" />
           </div>
         </div>
-        <div class="section-featured__tiles_small-2">
-          <img src="img/section_featured/small-2.png" alt="Gucci parfume">
-          <div class="section-featured__product-info">
-            <h2 class="section-featured__product-name">Perfume</h2>
-            <p class="section-featured__product-description">GUCCI INTENSE OUD EDP</p>
-            <p class="section-featured__product-buy-link"><a href="product0017.html">Shop Now</a></p>
-          </div>
-        </div>
       </div>
-
-
-    </section>
-
-    <section class="section-services">
-      <div class="section-services__flex-wrapper">
-        <div class="section-services__delivery">
-          <div class="section-services__icon">
-            <img src="img/section-services/icon-delivery.svg" alt="icon delivery">
-          </div>
-          <h2>FREE AND FAST DELIVERY</h2>
-          <p>Free delivery for all orders over $140</p>
-        </div>
-        <div class="section-services__support">
-          <div class="section-services__icon">
-            <img src="img/section-services/icon-support.svg" alt="icon support">
-          </div>
-          <h2>24/7 CUSTOMER SERVICE</h2>
-          <p>Friendly 24/7 customer support</p>
-        </div>
-        <div class="section-services__money-back">
-          <div class="section-services__icon">
-            <img src="img/section-services/icon-money-back.svg" alt="icon money-back">
-          </div>
-          <h2>MONEY BACK GUARANTEE</h2>
-          <p>We return money within 30 days</p>
-        </div>
+      <div class="divider divider-footer"></div>
+      <div class="footer__cellar">
+        <img src="img/footer/icon-copyright.svg" alt="copyright" />
+        <span>Copyright Rimel 2022.</span>
+        <span>All right reserved</span>
       </div>
-    </section>
-    <div class="back-btn_wrapper">
-      <a href="#top" class="back-btn">
-        <img src="img/arrow-left.svg" alt="btn back">
-      </a>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="footer__container-flex-grid">
-
-      <div class="footer__subscribe">
-        <div class="logo">
-          <h1 class="brand">Exclusive</h1>
-        </div>
-        <h2 class="footer__item-heading">Subscribe</h2>
-        <p class="footer__link">Get 10% off your first order</p>
-        <div class="footer__subscribe_form-container">
-          <input type="text" class="footer__subscribe_input" placeholder="Enter your email" name="mail" required>
-          <button type="submit" name="submit-btn" class="footer__subscribe_submit-btn"><img
-              src="img/footer/icon-send.svg" alt="submit button"></button>
-        </div>
-      </div>
-
-
-      <div class="footer__support">
-        <h2 class="footer__item-heading">Support</h2>
-        <p class="footer__link">111 Bijoy sarani, Dhaka,<br> DH 1515, Bangladesh.</p>
-        <p class="footer__link"><a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a></p>
-        <p class="footer__link"><a href="tel:+88015888889999">+88015-88888-9999</a></p>
-      </div>
-
-
-      <div class="footer__account">
-        <h2 class="footer__item-heading">Account</h2>
-        <p class="footer__link"><a href="user-account.html">My Account</a></p>
-        <p class="footer__link"><a href="signup.html">Login / Register</a></p>
-        <p class="footer__link"><a href="cart.html">Cart</a></p>
-        <p class="footer__link"><a href="wishlist.html">Wishlist</a></p>
-        <p class="footer__link"><a href="index.html">Shop</a></p>
-      </div>
-
-
-      <div class="footer__quick-link">
-        <h2 class="footer__item-heading">Quick Link</h2>
-        <p class="footer__link"><a href="#bottom">Privacy Policy</a></p>
-        <p class="footer__link"><a href="#">Terms Of Use</a></p>
-        <p class="footer__link"><a href="#">FAQ</a></p>
-        <p class="footer__link"><a href="contacts.html">Contact</a></p>
-      </div>
-
-      <div class="footer__download-app">
-        <h2 class="footer__item-heading">Download App</h2>
-        <p class="footer__text">Save $3 with App New User Only</p>
-        <div class="footer__download-links_grid-container">
-          <div class="footer__download-app_qrcode"><img src="img/footer/footer-download_qrcode.svg"
-              alt="download qr code"></div>
-          <div class="footer_download-app_google-play"><img src="img/footer/footer-download_google-play.png"
-              alt="google play market"></div>
-          <div class="footer_download-app_apple-store"><img src="img/footer/footer-download_apple-store.png"
-              alt="apple store"></div>
-        </div>
-        <div class="footer__social_flex-container">
-          <img src="img/footer/Icon-Facebook.svg" alt="facebook">
-          <img src="img/footer/Icon-Twitter.png" alt="twitter">
-          <img src="img/footer/icon-instagram.svg" alt="instagram">
-          <img src="img/footer/Icon-Linkedin.svg" alt="linked in">
-        </div>
-      </div>
-
-    </div>
-    <div class="divider divider-footer"></div>
-    <div class="footer__cellar">
-      <img src="img/footer/icon-copyright.svg" alt="copyright">
-      <span>Copyright Rimel 2022.</span>
-      <span>All right reserved</span>
-    </div>
-  </footer>
-
-  <script src="scripts/header__dropdown-lang.js"></script><!--Меню выбора языка в шапке-->
-  <script src="scripts/change-class-by-click.js"></script> <!--Ставит "лайк" продукту-->
-
-</body>
-
+    </footer>
+  </body>
 </html>
