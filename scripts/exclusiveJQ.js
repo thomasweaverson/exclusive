@@ -42,3 +42,31 @@ function hideUserDropdownByClickOut() {
 }
 //? Change user icon on click, and open dropdown menu END
 
+
+
+//? Language dropdown START
+$(function () {
+  let dropdownLang = $('.lang_dropdown');
+  dropdownLang.click(() => dropdownLang.toggleClass('active'));
+  hideDropdownLangByClickOut()
+});
+
+
+function hideDropdownLangByClickOut() {
+  $(document).mouseup(function (e) {
+    let dropdownLangTarget = $('.lang_dropdown');
+
+    if (
+      !dropdownLangTarget.is(e.target) &&
+      dropdownLangTarget.has(e.target).length === 0
+    ) {
+      dropdownLangTarget.removeClass('active');
+    }
+  });
+}
+
+//* Lang choice by click
+$(document).on('click', 'div[class="language"]', function(e) {
+  $('.langDropdown_current').text($(this).html())
+});
+//? Language dropdown END
