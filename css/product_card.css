@@ -5,6 +5,11 @@
   flex-shrink: 0;
 }
 
+.today .product, .section-our-products .product{  
+  margin-right: 30px;
+}/*Для слайдера*/
+
+
 .product__card {
   position: relative;
   width: 100%;
@@ -347,11 +352,23 @@ z-index: 3;
   display: none;
   top: -9999px;
 }
+/*not checked*/
+.product_color-selector_red,
+.product_color-selector_carmine-pink,
+.product_color-selector_immature-yellow,
+.product_color-selector_black,
+.product_color-selector_turquoise-green {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
 
+/*not checked END*/
 .product__color-selector input:checked+label .color-selector__canvas {
   border: 2px solid black;
   border-radius: 50%;
 }
+
 
 .product__color-selector .product_color-selector_main>input:checked+label .product_color-selector_red,
 .product__color-selector .product_color-selector_secondary>input:checked+label .product_color-selector_carmine-pink,
@@ -365,18 +382,7 @@ z-index: 3;
 }
 
 
-/*not checked*/
-.product_color-selector_red,
-.product_color-selector_carmine-pink,
-.product_color-selector_immature-yellow,
-.product_color-selector_black,
-.product_color-selector_turquoise-green {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
 
-/*not checked END*/
 
 
 /*colors of products*/
