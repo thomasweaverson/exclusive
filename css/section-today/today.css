@@ -71,6 +71,10 @@
 }
 
 /*!countdown END*/
+.today__slick-carousel {
+  
+  margin-top: 40px;
+}
 
 .goods_container {
   display: flex;

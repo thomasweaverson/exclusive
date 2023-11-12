@@ -204,8 +204,10 @@ html {
 }
 
 .slider-btn {
+  display: inline-block;
   width: 46px;
   height: 46px;
+  border: none;
   border-radius: 50%;
   background-color: #f5f5f5;
   cursor: pointer;
@@ -220,7 +222,8 @@ html {
 }
 
 .slider-btn>img {
-  padding: 11px;
+  margin: 0 auto;
+  padding-top: 6px;
 }
 
 /*!slider-btn END*/
