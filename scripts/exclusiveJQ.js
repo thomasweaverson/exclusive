@@ -131,3 +131,21 @@ function hideDropdownManCategoryByClickOut() {
   });
 }
 //? Change Category Man Dropdown END
+
+
+//?Product card color select toggle
+
+$(document).ready(function () {
+  $(document).on("click",".product_color-selector", function () {
+    let clickedElem = $(this);
+    if(!clickedElem.hasClass('selected')) {
+      clickedElem.addClass('selected')
+      clickedElem.siblings().removeClass('selected')
+      let selectedProductImage = $(clickedElem.parents().filter('.product').find('.product__photo').find('img:hidden'))
+      let unselectedProductImage = $(clickedElem.parents().filter('.product').find('.product__photo').find('img:visible'))
+      selectedProductImage.fadeIn(200)
+      unselectedProductImage.fadeOut(200)
+
+    }
+ });
+})

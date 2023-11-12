@@ -37,9 +37,6 @@ $(document).ready(function () {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 
@@ -102,7 +99,7 @@ $(document).ready(function () {
     //слайдер в секции Our Products bottom
     $('.our-products__slick-carousel_bottom').slick({
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
