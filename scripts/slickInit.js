@@ -102,7 +102,7 @@ $(document).ready(function () {
     //слайдер в секции Our Products bottom
     $('.our-products__slick-carousel_bottom').slick({
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 300,
       slidesToShow: 4,
       slidesToScroll: 4,
