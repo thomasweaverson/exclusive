@@ -35,6 +35,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="scripts/exclusiveJQ.js" defer></script>
     <script src="scripts/slickInit.js"></script>
+    <script src="scripts/countDown.js" defer></script>
 
     <script
       src="https://kit.fontawesome.com/d31cff1d68.js"
@@ -308,25 +309,25 @@
             </h1>
             <h1 class="black-header">Flash Sales</h1>
           </div>
-          <div class="countdown">
+          <div id="myCountDown" class="countdown">
             <div class="countdown__grid">
               <div class="countdown__days countdown__words">Days</div>
               <div class="countdown__hours countdown__words">Hours</div>
               <div class="countdown__minutes countdown__words">Minutes</div>
               <div class="countdown__seconds countdown__words">Seconds</div>
-              <div class="countdown__numbers">03</div>
+              <div class="countdown__numbers days">03</div>
               <div class="colon colon1">
                 <img src="img/section_today/countdown_colon.svg" alt="colon" />
               </div>
-              <div class="countdown__numbers">23</div>
+              <div class="countdown__numbers hours">23</div>
               <div class="colon colon2">
                 <img src="img/section_today/countdown_colon.svg" alt="colon" />
               </div>
-              <div class="countdown__numbers">19</div>
-              <div class="colon colon3">
+              <div class="countdown__numbers minutes">19</div>
+              <div class="colon colon3 blink">
                 <img src="img/section_today/countdown_colon.svg" alt="colon" />
               </div>
-              <div class="countdown__numbers">56</div>
+              <span class="countdown__numbers countdown-time seconds">56</span>
             </div>
           </div>
           <div class="slider-btns">
@@ -2658,10 +2659,11 @@
                       src="img/product_photos/product0013_red.png"
                       alt="Kids Electric Car"
                     />
-                    <img style="display: none"
-                    src="img/product_photos/product0013_lime.png"
-                    alt="Kids Electric Car"
-                  />
+                    <img
+                      style="display: none"
+                      src="img/product_photos/product0013_lime.png"
+                      alt="Kids Electric Car"
+                    />
                   </div>
                 </div>
                 <div class="product__description">
@@ -2716,10 +2718,11 @@
                       src="img/product_photos/product0014_immature-yellow.png"
                       alt="Jr. Zoom Soccer Cleats"
                     />
-                    <img style="display: none;"
-                    src="img/product_photos/product0014_carmine-pink.png"
-                    alt="Jr. Zoom Soccer Cleats"
-                  />
+                    <img
+                      style="display: none"
+                      src="img/product_photos/product0014_carmine-pink.png"
+                      alt="Jr. Zoom Soccer Cleats"
+                    />
                   </div>
                 </div>
                 <div class="product__description">
@@ -2774,10 +2777,11 @@
                       src="img/product_photos/product0015_black.png"
                       alt="GP11 Shooter USB Gamepad"
                     />
-                    <img style="display: none;"
-                    src="img/product_photos/product0015_white.png"
-                    alt="GP11 Shooter USB Gamepad"
-                  />
+                    <img
+                      style="display: none"
+                      src="img/product_photos/product0015_white.png"
+                      alt="GP11 Shooter USB Gamepad"
+                    />
                   </div>
                 </div>
                 <div class="product__description">
@@ -2832,10 +2836,11 @@
                       src="img/product_photos/product0016_turquoise-green.png"
                       alt="Quilted Satin Jacket"
                     />
-                    <img style="display: none;"
-                    src="img/product_photos/product0016_brown.png"
-                    alt="Quilted Satin Jacket"
-                  />
+                    <img
+                      style="display: none"
+                      src="img/product_photos/product0016_brown.png"
+                      alt="Quilted Satin Jacket"
+                    />
                   </div>
                 </div>
                 <div class="product__description">
@@ -2933,10 +2938,11 @@
                       src="img/product_photos/product0019_orange.png"
                       alt="Third-Step Pro"
                     />
-                    <img style="display: none;"
-                    src="img/product_photos/product0019_dark-blue.png"
-                    alt="Third-Step Pro"
-                  />
+                    <img
+                      style="display: none"
+                      src="img/product_photos/product0019_dark-blue.png"
+                      alt="Third-Step Pro"
+                    />
                   </div>
                 </div>
                 <div class="product__description">
@@ -2991,10 +2997,11 @@
                       src="img/product_photos/product0020_deep-yellow.png"
                       alt="Sofa Sinter Bekka"
                     />
-                    <img style="display: none;"
-                    src="img/product_photos/product0020_dark-red.png"
-                    alt="Sofa Sinter Bekka"
-                  />
+                    <img
+                      style="display: none"
+                      src="img/product_photos/product0020_dark-red.png"
+                      alt="Sofa Sinter Bekka"
+                    />
                   </div>
                 </div>
                 <div class="product__description">
@@ -3049,10 +3056,11 @@
                       src="img/product_photos/product0021_swamp.png"
                       alt="Armchair Olivia Screelman"
                     />
-                    <img style="display: none;"
-                    src="img/product_photos/product0021_niagara.png"
-                    alt="Armchair Olivia Screelman"
-                  />
+                    <img
+                      style="display: none"
+                      src="img/product_photos/product0021_niagara.png"
+                      alt="Armchair Olivia Screelman"
+                    />
                   </div>
                 </div>
                 <div class="product__description">
