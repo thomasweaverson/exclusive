@@ -32,15 +32,19 @@
     <link rel="stylesheet" href="css/footer/footer.css" />
     <link rel="stylesheet" href="css/product_card.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
     <script src="scripts/exclusiveJQ.js" defer></script>
-    <script src="scripts/slickInit.js"></script>
+    <script src="scripts/slickInit.js" defer></script>
     <script src="scripts/countDown.js" defer></script>
-
+    <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer
+  ></script>
     <script
       src="https://kit.fontawesome.com/d31cff1d68.js"
-      crossorigin="anonymous"
+      crossorigin="anonymous" defer
     ></script>
+
   </head>
 
   <body>
@@ -309,7 +313,7 @@
             </h1>
             <h1 class="black-header">Flash Sales</h1>
           </div>
-          <div id="myCountDown" class="countdown">
+          <div id="todayCountdown" class="countdown">
             <div class="countdown__grid">
               <div class="countdown__days countdown__words">Days</div>
               <div class="countdown__hours countdown__words">Hours</div>
@@ -1579,25 +1583,25 @@
           <p class="section-banner-middle-page__promo">
             Enhance Your Music Experience
           </p>
-          <div class="section-banner-middle-page__countdown">
+          <div id="middlePageCountdown" class="section-banner-middle-page__countdown">
             <div class="section-banner-middle-page__countdown_items">
-              <p class="section-banner-middle-page__countdown_numbers">05</p>
+              <p class="section-banner-middle-page__countdown_numbers days">05</p>
               <p class="section-banner-middle-page__countdown_measures">Days</p>
             </div>
             <div class="section-banner-middle-page__countdown_items">
-              <p class="section-banner-middle-page__countdown_numbers">23</p>
+              <p class="section-banner-middle-page__countdown_numbers hours">23</p>
               <p class="section-banner-middle-page__countdown_measures">
                 Hours
               </p>
             </div>
             <div class="section-banner-middle-page__countdown_items">
-              <p class="section-banner-middle-page__countdown_numbers">59</p>
+              <p class="section-banner-middle-page__countdown_numbers minutes">59</p>
               <p class="section-banner-middle-page__countdown_measures">
                 Minutes
               </p>
             </div>
             <div class="section-banner-middle-page__countdown_items">
-              <p class="section-banner-middle-page__countdown_numbers">23</p>
+              <p class="section-banner-middle-page__countdown_numbers seconds">23</p>
               <p class="section-banner-middle-page__countdown_measures">
                 Seconds
               </p>
@@ -3306,9 +3310,5 @@
         <span>All right reserved</span>
       </div>
     </footer>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
   </body>
 </html>

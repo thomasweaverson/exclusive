@@ -15,7 +15,6 @@ function getTimeRemaining(endtime) {
 
 function initializeClock(id, endtime) {
   let clock = document.getElementById(id);
-  console.log(clock);
   let daysSpan = clock.querySelector('.days');
   let hoursSpan = clock.querySelector('.hours');
   let minutesSpan = clock.querySelector('.minutes');
@@ -40,19 +39,21 @@ function initializeClock(id, endtime) {
   let timeinterval = setInterval(updateClock, 1000);
 }
 
-let deadline = new Date(
+let deadlineSectionToday = new Date(
   Date.parse(new Date()) +
     3 * 24 * 60 * 60 * 1000 +
     23 * 60 * 60 * 1000 +
-    19 * 60 * 1000 + 2 * 1000
+    19 * 60 * 1000 + 6 * 1000
 ); // for endless timer
-initializeClock('myCountDown', deadline);
+
+let deadlineJBL = new Date(
+  Date.parse(new Date()) +
+    5 * 24 * 60 * 60 * 1000 +
+    23 * 60 * 60 * 1000 +
+    59 * 60 * 1000 + 6 * 1000
+); // for endless timer
+
+initializeClock('todayCountdown', deadlineSectionToday);
+initializeClock('middlePageCountdown', deadlineJBL);
 
 
-// $(document).ready(function () {
-//   $('countdown__numbers.countdown-time.seconds').text().on('change', function () {
-//     $('.colon').fadeTo(100, 0.1, function () {
-//       $('.colon').fadeTo(200, 1)
-//     })
-//   })
-// })
