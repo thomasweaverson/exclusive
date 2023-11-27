@@ -17,6 +17,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="scripts/exclusiveJQ.js" defer></script>
+  <script src="scripts/cartCounters.js" defer></script>
 
   <script src="https://kit.fontawesome.com/d31cff1d68.js" crossorigin="anonymous"></script>
 </head>
@@ -153,12 +154,12 @@
           <div class="section-cart__grid-product-row01_price">$650</div>
           <div class="section-cart__grid-product-row01_quantity">
             <div class="section-cart__quantity_object">
-              <div class="section-cart__quantity_quantity">01</div>
-              <div class="section-cart__quantity_increase"><img src="img/quantity-object-arrow.svg" alt=""></div>
-              <div class="section-cart__quantity_decrease"><img src="img/quantity-object-arrow.svg" alt=""></div>
+              <div id="quantityLCDMonitor" class="section-cart__quantity_quantity">01</div>
+              <div id="incBtnLCDMonitor" class="section-cart__quantity_increase"><img src="img/quantity-object-arrow.svg" alt=""></div>
+              <div id="decBtnLCDMonitor" class="section-cart__quantity_decrease"><img src="img/quantity-object-arrow.svg" alt=""></div>
             </div>
           </div>
-          <div class="section-cart__grid-product-row01_subtotal">$650</div>
+          <div id="subTotalLCDMonitor" class="section-cart__grid-product-row01_subtotal">$650</div>
           <div class="section-cart__grid-product-row02_shadow"></div><!---->
           <div class="section-cart__grid-product-row02_product">
             <div class="section-cart__product-grid">
@@ -172,12 +173,12 @@
           <div class="section-cart__grid-product-row02_price">$550</div>
           <div class="section-cart__grid-product-row02_quantity">
             <div class="section-cart__quantity_object">
-              <div class="section-cart__quantity_quantity">02</div>
-              <div class="section-cart__quantity_increase"><img src="img/quantity-object-arrow.svg" alt=""></div>
-              <div class="section-cart__quantity_decrease"><img src="img/quantity-object-arrow.svg" alt=""></div>
+              <div id="quantityH1Gamepad" class="section-cart__quantity_quantity">02</div>
+              <div id="incBtnH1Gamepad" id="incBtnH1Gamepad" class="section-cart__quantity_increase"><img src="img/quantity-object-arrow.svg" alt=""></div>
+              <div id="decBtnH1Gamepad" id="decBtnH1Gamepad" class="section-cart__quantity_decrease"><img src="img/quantity-object-arrow.svg" alt=""></div>
             </div>
           </div>
-          <div class="section-cart__grid-product-row02_subtotal">$1100</div>
+          <div id="subTotalH1Gamepad" class="section-cart__grid-product-row02_subtotal">$1100</div>
 
         </div>
       </div>
@@ -195,7 +196,7 @@
           <div class="section-cart__total_subtotal"><span>Subtotal:</span><span>$1750</span></div>
           <div class="section-cart__total_shipping"><span>Shipping:</span><span>Free</span></div>
           <div class="section-cart__total_total"><span>Total:</span><span>$1750</span></div>
-          <button onclick="document.location='checkout.html'" class="red-btn"><span>Procees to checkout</span></button>
+          <button onclick="document.location='checkout.html'" class="red-btn"><span>Proceed to checkout</span></button>
         </div>
       </div>
     </section>
