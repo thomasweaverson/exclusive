@@ -137,4 +137,16 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   })
+  $(".slick_vertical_container").slick({
+    infinite: true,
+    vertical:true,
+    verticalSwiping:true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    arrows: true,
+    nextArrow: $('.vertical-slider-btn.down'),
+    prevArrow: $('.vertical-slider-btn.up'),
 })
+})
+
+

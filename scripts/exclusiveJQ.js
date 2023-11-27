@@ -149,3 +149,72 @@ $(document).ready(function () {
     }
  });
 })
+
+
+//?Product page quantity-plus-minus START
+let quantity = document.getElementById('quantity')
+let minusQuantityButton = document.getElementById('minus')
+let plusQuantityButton = document.getElementById('plus')
+
+minusQuantityButton.addEventListener('click', function() {
+  if (+quantity.textContent > 1) {
+    quantity.textContent = +quantity.textContent - 1
+  }
+})
+
+plusQuantityButton.addEventListener('click', function() {
+  quantity.textContent = +quantity.textContent + 1
+})
+//?Product page quantity-plus-minus END
+
+
+//?Product page small foto to big frame START
+let mainImg = document.getElementById('mainImg')
+let productPreviewsArray = document.getElementsByClassName('product-photo__small')
+for (let thumbnail of productPreviewsArray) {
+  thumbnail.addEventListener('click', function(event) {
+    if (event.target.tagName === 'IMG') {
+      let srcOfBig = event.target.getAttribute('src').replace('small', 'big')
+      mainImg.setAttribute('src', srcOfBig)
+    }
+    if (event.target.tagName === 'DIV') {
+      let srcOfBig = event.target.firstElementChild.getAttribute('src').replace('small', 'big')
+      mainImg.setAttribute('src', srcOfBig)
+    }
+  })
+}
+//?Product page small foto to big frame END
+
+//?Product page buttons show on hover
+
+let hoverFrame = document.getElementById('hover-frame')
+let upBtn = document.querySelector('.vertical-slider-btn.up')
+let downBtn = document.querySelector('.vertical-slider-btn.down')
+hoverFrame.addEventListener('mouseenter', function() {
+  upBtn.style.opacity = '0.7'
+  downBtn.style.opacity = '0.7'
+})
+hoverFrame.addEventListener('mouseleave', function() {
+  upBtn.style.opacity = '0.1'
+  downBtn.style.opacity = '0.1'
+})
+
+upBtn.addEventListener('mouseenter', function() {
+  upBtn.style.opacity = '0.7'
+  downBtn.style.opacity = '0.7'
+})
+upBtn.addEventListener('mouseleave', function() {
+  upBtn.style.opacity = '0.1'
+  downBtn.style.opacity = '0.1'
+})
+
+downBtn.addEventListener('mouseenter', function() {
+  upBtn.style.opacity = '0.7'
+  downBtn.style.opacity = '0.7'
+})
+downBtn.addEventListener('mouseleave', function() {
+  upBtn.style.opacity = '0.1'
+  downBtn.style.opacity = '0.1'
+})
+
+

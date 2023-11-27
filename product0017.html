@@ -1,424 +1,578 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusive shop - educational layout by Serg Garden</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive shop - educational layout by Serg Garden</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/header/header.css"/>
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+  />
+    <link rel="stylesheet" href="css/product-page.css" />
+    <link rel="stylesheet" href="css/section-related/related.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/header/header.css">
-  <link rel="stylesheet" href="css/product-page.css">
-  <link rel="stylesheet" href="css/section-related/related.css">
+    <link rel="stylesheet" href="css/footer/footer.css" />
 
-  <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/product_card.css" />
 
-  <link rel="stylesheet" href="css/product_card.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/exclusiveJQ.js" defer></script>
+    <script src="scripts/slickInit.js" defer></script>
+    <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer
+  ></script>
+    
+    <script
+      src="https://kit.fontawesome.com/d31cff1d68.js"
+      crossorigin="anonymous"
+    ></script>
 
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="scripts/exclusiveJQ.js" defer></script>
-  <script src="https://kit.fontawesome.com/d31cff1d68.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-
-  <header>
-    <div class="subheading-wrapper">
-      <div class="container subheading">
-        <div class="lang_dropdown">
-          <div class="langDropdown_current">English</div>
-          <div class="dropdown-btn">
-            <img src="img/dropdown-btn.svg" alt="icon dropdown" />
+  <body>
+    <header>
+      <div class="subheading-wrapper">
+        <div class="container subheading">
+          <div class="lang_dropdown">
+            <div class="langDropdown_current">English</div>
+            <div class="dropdown-btn">
+              <img src="img/dropdown-btn.svg" alt="icon dropdown" />
+            </div>
+            <div class="lang_dropdown-options">
+              <div class="language">English</div>
+              <div class="language">Russian</div>
+              <div class="language">Uzbek</div>
+              <div class="language">French</div>
+            </div>
           </div>
-          <div class="lang_dropdown-options">
-            <div class="language">English</div>
-            <div class="language">Russian</div>
-            <div class="language">Uzbek</div>
-            <div class="language">French</div>
-          </div>
+          <p>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF
+            50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
+          </p>
         </div>
-        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
-        </p>
       </div>
-    </div>
-    <div class="heading">
-      <div class="container heading__grid">
-        <div class="logo">
-          <h1 class="brand">Exclusive</h1>
-        </div>
-        <div class="heading__menu">
-          <ul class="heading__links_flex">
-            <li class="heading__link"><a href="index.html">Home</a></li>
-            <li class="heading__link"><a href="contacts.html">Contact</a></li>
-            <li class="heading__link"><a href="about.html">About</a></li>
-            <li class="heading__link"><a href="signup.html">Sign Up</a></li>
-          </ul>
-        </div>
-        <div class="search-box-and-acc-module">
-          <div class="search-container">
-            <input class="search-box" type="search" name="search" placeholder="What are you looking for?">
-            <button class="search-button"><img src="img/search-glass.svg" alt="search glass"></button>
+      <div class="heading">
+        <div class="container heading__grid">
+          <div class="logo">
+            <h1 class="brand">Exclusive</h1>
           </div>
-          <div class="acc-module-container-wrapper">
-            <div class="acc-module-container">
-              <button onclick="document.location='wishlist.html'" class="acc-module_wishlist"></button>
-              <button onclick="document.location='cart.html'" class="acc-module_cart"></button>
-              <button class="acc-module_user dropdown"></button>
-              <div id="dropdown-user" class="user-dropdown-content" style="display: none;">
-                <div class="dropdown-user-container">
-                  <a href="user-account.html">
-                    <div
-                      class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"
-                    >
-                      <img src="img/acc-user.svg" alt="icon account" /><span
-                        >Manage My Account</span
+          <div class="heading__menu">
+            <ul class="heading__links_flex">
+              <li class="heading__link"><a href="index.html">Home</a></li>
+              <li class="heading__link"><a href="contacts.html">Contact</a></li>
+              <li class="heading__link"><a href="about.html">About</a></li>
+              <li class="heading__link"><a href="signup.html">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="search-box-and-acc-module">
+            <div class="search-container">
+              <input
+                class="search-box"
+                type="search"
+                name="search"
+                placeholder="What are you looking for?"
+              />
+              <button class="search-button">
+                <img src="img/search-glass.svg" alt="search glass" />
+              </button>
+            </div>
+            <div class="acc-module-container-wrapper">
+              <div class="acc-module-container">
+                <button
+                  onclick="document.location='wishlist.html'"
+                  class="acc-module_wishlist"
+                ></button>
+                <button
+                  onclick="document.location='cart.html'"
+                  class="acc-module_cart"
+                ></button>
+                <button class="acc-module_user dropdown"></button>
+                <div
+                  id="dropdown-user"
+                  class="user-dropdown-content"
+                  style="display: none"
+                >
+                  <div class="dropdown-user-container">
+                    <a href="user-account.html">
+                      <div
+                        class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"
                       >
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-mallbag.svg"
-                        alt="mallbag"
-                      /><span>My Order</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-cancel.svg"
-                        alt="Cancellations"
-                      /><span>My Cancellations</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-reviews.svg"
-                        alt="reviews"
-                      /><span>My Reviews</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-logout.svg"
-                        alt="logout"
-                      /><span>Logout</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
-  </header>
-  <div class="divider"></div>
-  <main>
-    <ul class="catalog_list about-page">
-      <li class="catalog_li"><a href="index.html">Account</a></li>
-      <li class="catalog_li"><a href="index.html">Gaming</a></li>
-      <li class="catalog_li">Havic HV G-92 Gamepad</li>
-    </ul>
-    <section class="section-product-page">
-      <div class="section-product-page__grid-container">
-        <div class="product-photo__main">
-          <img src="img/product_photos/product0017/product0017_main.png" alt="gamepad">
-        </div>
-        <div class="slider-btn left">
-          <img src="img/arrow-left.svg" alt="arrow left">
-        </div>
-        <div class="slider-btn right">
-          <img src="img/arrow-right.svg" alt="arrow right">
-        </div>
-        <div class="product-photo__small-bg product-photo__small product-photo__small_one">
-          <img src="img/product_photos/product0017/product0017_one.png" alt="gamepad">
-        </div>
-        <div class="product-photo__small-bg product-photo__small product-photo__small_two">
-          <img src="img/product_photos/product0017/product0017_two.png" alt="gamepad">
-        </div>
-        <div class="product-photo__small-bg product-photo__small product-photo__small_three">
-          <img src="img/product_photos/product0017/product0017_three.png" alt="gamepad">
-        </div>
-        <div class="product-photo__small-bg product-photo__small product-photo__small_four">
-          <img src="img/product_photos/product0017/product0017_four.png" alt="gamepad">
-        </div>
-
-
-
-
-        <div class="product-info">
-          <h2 class="section-product-page__heading">Havic HV G-92 Gamepad</h2>
-          <div class="section-product-page__rating-status_flex-wrapper">
-            <p class="product__rating">
-              <span class="product__rating_stars_masked">
-                <progress value="4" max="5"></progress>
-                <img src="img/five_star_mask_bigsize.png" alt="">
-              </span>
-              <span class="product__rating_reviews">150 Reviews</span>
-            </p>
-            <div class="section-product-page__vertical-divider"></div>
-            <p class="section-product-page__status">In Stock</p>
-          </div>
-          <div class="section-product-page__price">192.00</div>
-          <p class="section-product-page__description">PlayStation 5 Controller Skin High quality vinyl with air channel
-            adhesive for easy bubble free install & mess free removal Pressure sensitive.</p>
-          <div class="section-product-page__divider"></div>
-          <div class="section-product-page__color-selectors">
-            <span>Colors:</span>
-            <input type="radio" id="very-light-blue" name="product0017-color" checked>
-            <label for="very-light-blue"></label>
-            <input type="radio" id="caramel-pink" name="product0017-color">
-            <label for="caramel-pink"></label>
-
-          </div>
-          <div class="section-product-page__size-selectors">
-            <span>Size:</span>
-            <input type="radio" id="xs" name="product0017-size">
-            <label for="xs">XS</label>
-            <input type="radio" id="s" name="product0017-size">
-            <label for="s">S</label>
-            <input type="radio" id="m" name="product0017-size" checked>
-            <label for="m">M</label>
-            <input type="radio" id="l" name="product0017-size">
-            <label for="l">L</label>
-            <input type="radio" id="xl" name="product0017-size">
-            <label for="xl">XL</label>
-          </div>
-          <div class="section-product-page__quantity-buy-wish_flex-wrapper">
-            <div class="section-product-page__quantity_grid-container">
-              <button class="section-product-page__quantity_btn-decrease"></button>
-              <div class="section-product-page__quantity_quantity"><span>2</span></div>
-              <button class="section-product-page__quantity_btn-increase"></button>
-            </div>
-            <div class="section-product-page__buy-wish">
-              <button class="red-btn">Buy Now</button>
-              <button class="section-product-page__add-to-wishlist-btn"></button>
-            </div>
-          </div>
-          <div class="section-product-page__delivery-info">
-            <div class="section-product-page__delivery-info_free-delivery">
-              <div class="section-product-page__free-delivery_flex-wrapper">
-                <img src="img/product-page_icon-delivery.svg" alt="icon delivery"
-                  class="section-product-page__free-delivery-icon"></img>
-                <div class="section-product-page__free-delivery_description">
-                  <h3>Free Delivery</h3>
-                  <p><a href="#">Enter your postal code for Delivery Availability</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="section-product-page__delivery-info_return">
-              <div class="section-product-page__return_flex-wrapper">
-                <img src="img/product-page_icon-return.svg" alt="icon return"
-                  class="section-product-page__return-icon"></img>
-                <div class="section-product-page__return_description">
-                  <h3>Return Delivery</h3>
-                  <p>Free 30 Days Delivery Returns. <a href="#">Details</a></p>
+                        <img src="img/acc-user.svg" alt="icon account" /><span
+                          >Manage My Account</span
+                        >
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-mallbag.svg"
+                          alt="mallbag"
+                        /><span>My Order</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-cancel.svg"
+                          alt="Cancellations"
+                        /><span>My Cancellations</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-reviews.svg"
+                          alt="reviews"
+                        /><span>My Reviews</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-logout.svg"
+                          alt="logout"
+                        /><span>Logout</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </section>
-    <section class="section-related">
-      <div class="section-headers">
-        <h1 class="red-header">
-          <div class="red-header__brick"></div> <span>Related Item</span>
-        </h1>
       </div>
-
-      <div class="goods_container">
-        <div class="product">
-          <div class="product__card">
-            <div class="product__card_grid">
-              <div class="product__discount">-40%</div>
-              <div class="product__wishlist"></div>
-              <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-            </div>
-            <div class="product__add-to-cart">Add To Cart</div>
-            <div class="product__photo"><img src="img/product_photos/product0001.png" alt="gamepad">
-            </div>
+    </header>
+    <div class="divider"></div>
+    <main>
+      <ul class="catalog_list about-page">
+        <li class="catalog_li"><a href="index.html">Account</a></li>
+        <li class="catalog_li"><a href="index.html">Gaming</a></li>
+        <li class="catalog_li">Havic HV G-92 Gamepad</li>
+      </ul>
+      <section class="section-product-page">
+        <div class="section-product-page__grid-container">
+          <!-- <div id="hover-frame"></div> -->
+          <div class="product-photo__main">
+            <img id="mainImg"
+              src="img/product_photos/product0017/product0017_one_big.png"
+              alt="gamepad"
+            />
           </div>
-          <div class="product__description">
-            <h4 onclick="document.location='product0017.html'" class="product__name">HAVIT HV-G92 Gamepad</h4>
-            <p class="product__prices">
-              <span class="product__prices_current">120</span>
-              <span class="product__prices_old">200</span>
+          <button class="vertical-slider-btn up">
+            <img src="img/product-page-arrowUp.svg" alt="arrow up" />
+          </button>
+          <button class="vertical-slider-btn down">
+            <img src="img/product-page-arrowDown.svg" alt="arrow right" />
+          </button>
+         <div id="hover-frame">
+          
+            <div class="slick_vertical_container">
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_one_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_two_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_three_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_four_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_five_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_six_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_seven_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+              <div><div class="product-photo__small-bg product-photo__small">
+                <img
+                  src="img/product_photos/product0017/product0017_eight_small.png"
+                  alt="gamepad"
+                />
+              </div></div>
+            </div>
+         </div>
+          <div class="product-info">
+            <h2 class="section-product-page__heading">Havic HV G-92 Gamepad</h2>
+            <div class="section-product-page__rating-status_flex-wrapper">
+              <p class="product__rating">
+                <span class="product__rating_stars_masked">
+                  <progress value="4" max="5"></progress>
+                  <img src="img/five_star_mask_bigsize.png" alt="" />
+                </span>
+                <span class="product__rating_reviews">150 Reviews</span>
+              </p>
+              <div class="section-product-page__vertical-divider"></div>
+              <p class="section-product-page__status">In Stock</p>
+            </div>
+            <div class="section-product-page__price">192.00</div>
+            <p class="section-product-page__description">
+              PlayStation 5 Controller Skin High quality vinyl with air channel
+              adhesive for easy bubble free install & mess free removal Pressure
+              sensitive.
             </p>
-            <p class="product__rating">
-              <span class="product__rating_stars_masked">
-                <progress value="5" max="5"></progress>
-                <img src="img/five_star_mask_bigsize.png" alt="">
-              </span>
-              <span class="product__rating_reviews">88</span>
-            </p>
+            <div class="section-product-page__divider"></div>
+            <div class="section-product-page__color-selectors">
+              <span>Colors:</span>
+              <input
+                type="radio"
+                id="very-light-blue"
+                name="product0017-color"
+                checked
+              />
+              <label for="very-light-blue"></label>
+              <input type="radio" id="caramel-pink" name="product0017-color" />
+              <label for="caramel-pink"></label>
+            </div>
+            <div class="section-product-page__size-selectors">
+              <span>Size:</span>
+              <input type="radio" id="xs" name="product0017-size" />
+              <label for="xs">XS</label>
+              <input type="radio" id="s" name="product0017-size" />
+              <label for="s">S</label>
+              <input type="radio" id="m" name="product0017-size" checked />
+              <label for="m">M</label>
+              <input type="radio" id="l" name="product0017-size" />
+              <label for="l">L</label>
+              <input type="radio" id="xl" name="product0017-size" />
+              <label for="xl">XL</label>
+            </div>
+            <div class="section-product-page__quantity-buy-wish_flex-wrapper">
+              <div class="section-product-page__quantity_grid-container">
+                <button
+                  id="minus"
+                  class="section-product-page__quantity_btn-decrease"
+                ></button>
+                <div class="section-product-page__quantity_quantity">
+                  <span id="quantity">2</span>
+                </div>
+                <button
+                  id="plus"
+                  class="section-product-page__quantity_btn-increase"
+                ></button>
+              </div>
+              <div class="section-product-page__buy-wish">
+                <button class="red-btn">Buy Now</button>
+                <button
+                  class="section-product-page__add-to-wishlist-btn"
+                ></button>
+              </div>
+            </div>
+            <div class="section-product-page__delivery-info">
+              <div class="section-product-page__delivery-info_free-delivery">
+                <div class="section-product-page__free-delivery_flex-wrapper">
+                  <img
+                    src="img/product-page_icon-delivery.svg"
+                    alt="icon delivery"
+                    class="section-product-page__free-delivery-icon"
+                  />
+                  <div class="section-product-page__free-delivery_description">
+                    <h3>Free Delivery</h3>
+                    <p>
+                      <a href="#"
+                        >Enter your postal code for Delivery Availability</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="section-product-page__delivery-info_return">
+                <div class="section-product-page__return_flex-wrapper">
+                  <img
+                    src="img/product-page_icon-return.svg"
+                    alt="icon return"
+                    class="section-product-page__return-icon"
+                  />
+                  <div class="section-product-page__return_description">
+                    <h3>Return Delivery</h3>
+                    <p>
+                      Free 30 Days Delivery Returns. <a href="#">Details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="product">
-          <div class="product__card">
-            <div class="product__card_grid">
-              <div class="product__discount">-35%</div>
-              <div class="product__wishlist"></div>
-              <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-            </div>
-            <div class="product__add-to-cart">Add To Cart</div>
-            <div class="product__photo"><img src="img/product_photos/product0002.png" alt="keyboard">
+      </section>
+      <section class="section-related">
+        <div class="section-headers">
+          <h1 class="red-header">
+            <div class="red-header__brick"></div>
+            <span>Related Item</span>
+          </h1>
+        </div>
 
+        <div class="goods_container">
+          <div class="product">
+            <div class="product__card">
+              <div class="product__card_grid">
+                <div class="product__discount">-40%</div>
+                <div class="product__wishlist"></div>
+                <div class="product__details">
+                  <img src="img/product_details.svg" alt="button quick view" />
+                </div>
+              </div>
+              <div class="product__add-to-cart">Add To Cart</div>
+              <div class="product__photo">
+                <img src="img/product_photos/product0001.png" alt="gamepad" />
+              </div>
+            </div>
+            <div class="product__description">
+              <h4
+                onclick="document.location='product0017.html'"
+                class="product__name"
+              >
+                HAVIT HV-G92 Gamepad
+              </h4>
+              <p class="product__prices">
+                <span class="product__prices_current">120</span>
+                <span class="product__prices_old">200</span>
+              </p>
+              <p class="product__rating">
+                <span class="product__rating_stars_masked">
+                  <progress value="5" max="5"></progress>
+                  <img src="img/five_star_mask_bigsize.png" alt="" />
+                </span>
+                <span class="product__rating_reviews">88</span>
+              </p>
             </div>
           </div>
-          <div class="product__description">
-            <h4 onclick="document.location='product0017.html'" class="product__name">AK-900 Wired Keyboard</h4>
-            <p class="product__prices">
-              <span class="product__prices_current">960</span>
-              <span class="product__prices_old">1477</span>
-            </p>
-            <p class="product__rating">
-              <span class="product__rating_stars_masked">
-                <progress value="4" max="5"></progress>
-                <img src="img/five_star_mask_bigsize.png" alt="">
-              </span>
-              <span class="product__rating_reviews">75</span>
-            </p>
+          <div class="product">
+            <div class="product__card">
+              <div class="product__card_grid">
+                <div class="product__discount">-35%</div>
+                <div class="product__wishlist"></div>
+                <div class="product__details">
+                  <img src="img/product_details.svg" alt="button quick view" />
+                </div>
+              </div>
+              <div class="product__add-to-cart">Add To Cart</div>
+              <div class="product__photo">
+                <img src="img/product_photos/product0002.png" alt="keyboard" />
+              </div>
+            </div>
+            <div class="product__description">
+              <h4
+                onclick="document.location='product0017.html'"
+                class="product__name"
+              >
+                AK-900 Wired Keyboard
+              </h4>
+              <p class="product__prices">
+                <span class="product__prices_current">960</span>
+                <span class="product__prices_old">1477</span>
+              </p>
+              <p class="product__rating">
+                <span class="product__rating_stars_masked">
+                  <progress value="4" max="5"></progress>
+                  <img src="img/five_star_mask_bigsize.png" alt="" />
+                </span>
+                <span class="product__rating_reviews">75</span>
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__card">
+              <div class="product__card_grid">
+                <div class="product__discount">-30%</div>
+                <div class="product__wishlist"></div>
+                <div class="product__details">
+                  <img src="img/product_details.svg" alt="button quick view" />
+                </div>
+              </div>
+              <div class="product__add-to-cart">Add To Cart</div>
+              <div class="product__photo">
+                <img src="img/product_photos/product0003.png" alt="monitor" />
+              </div>
+            </div>
+            <div class="product__description">
+              <h4
+                onclick="document.location='product0017.html'"
+                class="product__name"
+              >
+                IPS LCD Gaming Monitor
+              </h4>
+              <p class="product__prices">
+                <span class="product__prices_current">370</span>
+                <span class="product__prices_old">529</span>
+              </p>
+              <p class="product__rating">
+                <span class="product__rating_stars_masked">
+                  <progress value="5" max="5"></progress>
+                  <img src="img/five_star_mask_bigsize.png" alt="" />
+                </span>
+                <span class="product__rating_reviews">99</span>
+              </p>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product__card">
+              <div class="product__card_grid">
+                <div class="product__discount">-30%</div>
+                <div class="product__wishlist"></div>
+                <div class="product__details">
+                  <img src="img/product_details.svg" alt="button quick view" />
+                </div>
+              </div>
+              <div class="product__add-to-cart">Add To Cart</div>
+              <div class="product__photo">
+                <img src="img/product_photos/product0007.png" alt="monitor" />
+              </div>
+            </div>
+            <div class="product__description">
+              <h4
+                onclick="document.location='product0017.html'"
+                class="product__name"
+              >
+                RGB liquid CPU Cooler
+              </h4>
+              <p class="product__prices">
+                <span class="product__prices_current">160</span>
+                <span class="product__prices_old">170</span>
+              </p>
+              <p class="product__rating">
+                <span class="product__rating_stars_masked">
+                  <progress value="4.5" max="5"></progress>
+                  <img src="img/five_star_mask_bigsize.png" alt="" />
+                </span>
+                <span class="product__rating_reviews">65</span>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="product">
-          <div class="product__card">
-            <div class="product__card_grid">
-              <div class="product__discount">-30%</div>
-              <div class="product__wishlist"></div>
-              <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-            </div>
-            <div class="product__add-to-cart">Add To Cart</div>
-            <div class="product__photo"><img src="img/product_photos/product0003.png" alt="monitor">
-
-            </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container-flex-grid">
+        <div class="footer__subscribe">
+          <div class="logo">
+            <h1 class="brand">Exclusive</h1>
           </div>
-          <div class="product__description">
-            <h4 onclick="document.location='product0017.html'" class="product__name">IPS LCD Gaming Monitor</h4>
-            <p class="product__prices">
-              <span class="product__prices_current">370</span>
-              <span class="product__prices_old">529</span>
-            </p>
-            <p class="product__rating">
-              <span class="product__rating_stars_masked">
-                <progress value="5" max="5"></progress>
-                <img src="img/five_star_mask_bigsize.png" alt="">
-              </span>
-              <span class="product__rating_reviews">99</span>
-            </p>
+          <h2 class="footer__item-heading">Subscribe</h2>
+          <p class="footer__link">Get 10% off your first order</p>
+          <div class="footer__subscribe_form-container">
+            <input
+              type="text"
+              class="footer__subscribe_input"
+              placeholder="Enter your email"
+              name="mail"
+              required
+            />
+            <button
+              type="submit"
+              name="submit-btn"
+              class="footer__subscribe_submit-btn"
+            >
+              <img src="img/footer/icon-send.svg" alt="submit button" />
+            </button>
           </div>
         </div>
-        <div class="product">
-          <div class="product__card">
-            <div class="product__card_grid">
-              <div class="product__discount">-30%</div>
-              <div class="product__wishlist"></div>
-              <div class="product__details"><img src="img/product_details.svg" alt="button quick view"></div>
-            </div>
-            <div class="product__add-to-cart">Add To Cart</div>
-            <div class="product__photo"><img src="img/product_photos/product0007.png" alt="monitor">
 
+        <div class="footer__support">
+          <h2 class="footer__item-heading">Support</h2>
+          <p class="footer__link">
+            111 Bijoy sarani, Dhaka,<br />
+            DH 1515, Bangladesh.
+          </p>
+          <p class="footer__link">
+            <a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
+          </p>
+          <p class="footer__link">
+            <a href="tel:+88015888889999">+88015-88888-9999</a>
+          </p>
+        </div>
+
+        <div class="footer__account">
+          <h2 class="footer__item-heading">Account</h2>
+          <p class="footer__link"><a href="user-account.html">My Account</a></p>
+          <p class="footer__link"><a href="signup.html">Login / Register</a></p>
+          <p class="footer__link"><a href="cart.html">Cart</a></p>
+          <p class="footer__link"><a href="wishlist.html">Wishlist</a></p>
+          <p class="footer__link"><a href="index.html">Shop</a></p>
+        </div>
+
+        <div class="footer__quick-link">
+          <h2 class="footer__item-heading">Quick Link</h2>
+          <p class="footer__link"><a href="#bottom">Privacy Policy</a></p>
+          <p class="footer__link"><a href="#">Terms Of Use</a></p>
+          <p class="footer__link"><a href="#">FAQ</a></p>
+          <p class="footer__link"><a href="contacts.html">Contact</a></p>
+        </div>
+
+        <div class="footer__download-app">
+          <h2 class="footer__item-heading">Download App</h2>
+          <p class="footer__text">Save $3 with App New User Only</p>
+          <div class="footer__download-links_grid-container">
+            <div class="footer__download-app_qrcode">
+              <img
+                src="img/footer/footer-download_qrcode.svg"
+                alt="download qr code"
+              />
+            </div>
+            <div class="footer_download-app_google-play">
+              <img
+                src="img/footer/footer-download_google-play.png"
+                alt="google play market"
+              />
+            </div>
+            <div class="footer_download-app_apple-store">
+              <img
+                src="img/footer/footer-download_apple-store.png"
+                alt="apple store"
+              />
             </div>
           </div>
-          <div class="product__description">
-            <h4 onclick="document.location='product0017.html'" class="product__name">RGB liquid CPU Cooler</h4>
-            <p class="product__prices">
-              <span class="product__prices_current">160</span>
-              <span class="product__prices_old">170</span>
-            </p>
-            <p class="product__rating">
-              <span class="product__rating_stars_masked">
-                <progress value="4.5" max="5"></progress>
-                <img src="img/five_star_mask_bigsize.png" alt="">
-              </span>
-              <span class="product__rating_reviews">65</span>
-            </p>
+          <div class="footer__social_flex-container">
+            <img src="img/footer/Icon-Facebook.svg" alt="facebook" />
+            <img src="img/footer/Icon-Twitter.png" alt="twitter" />
+            <img src="img/footer/icon-instagram.svg" alt="instagram" />
+            <img src="img/footer/Icon-Linkedin.svg" alt="linked in" />
           </div>
         </div>
       </div>
-
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__container-flex-grid">
-
-      <div class="footer__subscribe">
-        <div class="logo">
-          <h1 class="brand">Exclusive</h1>
-        </div>
-        <h2 class="footer__item-heading">Subscribe</h2>
-        <p class="footer__link">Get 10% off your first order</p>
-        <div class="footer__subscribe_form-container">
-          <input type="text" class="footer__subscribe_input" placeholder="Enter your email" name="mail" required>
-          <button type="submit" name="submit-btn" class="footer__subscribe_submit-btn"><img
-              src="img/footer/icon-send.svg" alt="submit button"></button>
-        </div>
+      <div class="divider divider-footer"></div>
+      <div class="footer__cellar">
+        <img src="img/footer/icon-copyright.svg" alt="copyright" />
+        <span>Copyright Rimel 2022.</span>
+        <span>All right reserved</span>
       </div>
-
-
-      <div class="footer__support">
-        <h2 class="footer__item-heading">Support</h2>
-        <p class="footer__link">111 Bijoy sarani, Dhaka,<br> DH 1515, Bangladesh.</p>
-        <p class="footer__link"><a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a></p>
-        <p class="footer__link"><a href="tel:+88015888889999">+88015-88888-9999</a></p>
-      </div>
-
-
-      <div class="footer__account">
-        <h2 class="footer__item-heading">Account</h2>
-        <p class="footer__link"><a href="user-account.html">My Account</a></p>
-        <p class="footer__link"><a href="signup.html">Login / Register</a></p>
-        <p class="footer__link"><a href="cart.html">Cart</a></p>
-        <p class="footer__link"><a href="wishlist.html">Wishlist</a></p>
-        <p class="footer__link"><a href="index.html">Shop</a></p>
-      </div>
-
-
-      <div class="footer__quick-link">
-        <h2 class="footer__item-heading">Quick Link</h2>
-        <p class="footer__link"><a href="#bottom">Privacy Policy</a></p>
-        <p class="footer__link"><a href="#">Terms Of Use</a></p>
-        <p class="footer__link"><a href="#">FAQ</a></p>
-        <p class="footer__link"><a href="contacts.html">Contact</a></p>
-      </div>
-
-      <div class="footer__download-app">
-        <h2 class="footer__item-heading">Download App</h2>
-        <p class="footer__text">Save $3 with App New User Only</p>
-        <div class="footer__download-links_grid-container">
-          <div class="footer__download-app_qrcode"><img src="img/footer/footer-download_qrcode.svg"
-              alt="download qr code"></div>
-          <div class="footer_download-app_google-play"><img src="img/footer/footer-download_google-play.png"
-              alt="google play market"></div>
-          <div class="footer_download-app_apple-store"><img src="img/footer/footer-download_apple-store.png"
-              alt="apple store"></div>
-        </div>
-        <div class="footer__social_flex-container">
-          <img src="img/footer/Icon-Facebook.svg" alt="facebook">
-          <img src="img/footer/Icon-Twitter.png" alt="twitter">
-          <img src="img/footer/icon-instagram.svg" alt="instagram">
-          <img src="img/footer/Icon-Linkedin.svg" alt="linked in">
-        </div>
-      </div>
-
-    </div>
-    <div class="divider divider-footer"></div>
-    <div class="footer__cellar">
-      <img src="img/footer/icon-copyright.svg" alt="copyright">
-      <span>Copyright Rimel 2022.</span>
-      <span>All right reserved</span>
-    </div>
-  </footer>
-
-
+    </footer>
+  </body>
 </html>
