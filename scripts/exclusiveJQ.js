@@ -190,6 +190,7 @@ for (let thumbnail of productPreviewsArray) {
 let hoverFrame = document.getElementById('hover-frame')
 let upBtn = document.querySelector('.vertical-slider-btn.up')
 let downBtn = document.querySelector('.vertical-slider-btn.down')
+
 hoverFrame.addEventListener('mouseenter', function() {
   upBtn.style.opacity = '0.7'
   downBtn.style.opacity = '0.7'
@@ -217,4 +218,33 @@ downBtn.addEventListener('mouseleave', function() {
   downBtn.style.opacity = '0.1'
 })
 
+let subHoverFrame = document.getElementById('sub-hover-frame')
+let rightBtn = document.querySelector('.vertical-slider-btn.right')
+let leftBtn = document.querySelector('.vertical-slider-btn.left')
 
+subHoverFrame.addEventListener('mouseenter', function() {
+  rightBtn.style.opacity = '0.7'
+  leftBtn.style.opacity = '0.7'
+})
+subHoverFrame.addEventListener('mouseleave', function() {
+  rightBtn.style.opacity = '0.1'
+  leftBtn.style.opacity = '0.1'
+})
+
+rightBtn.addEventListener('mouseenter', function() {
+  rightBtn.style.opacity = '0.7'
+  leftBtn.style.opacity = '0.7'
+})
+rightBtn.addEventListener('mouseleave', function() {
+  rightBtn.style.opacity = '0.1'
+  leftBtn.style.opacity = '0.1'
+})
+
+leftBtn.addEventListener('mouseenter', function() {
+  rightBtn.style.opacity = '0.7'
+  leftBtn.style.opacity = '0.7'
+})
+leftBtn.addEventListener('mouseleave', function() {
+  rightBtn.style.opacity = '0.1'
+  leftBtn.style.opacity = '0.1'
+})

@@ -147,6 +147,15 @@ $(document).ready(function () {
     nextArrow: $('.vertical-slider-btn.down'),
     prevArrow: $('.vertical-slider-btn.up'),
 })
+
+  $('#subSlider').slick({
+    infinite: true,
+    arrows: true,
+    nextArrow: $('.vertical-slider-btn.right'),
+    prevArrow: $('.vertical-slider-btn.left'),
+  })
+
 })
+
 
 
