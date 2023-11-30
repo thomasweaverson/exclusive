@@ -1,4 +1,10 @@
 $(document).ready(function () {
+  // слайдер баннер
+  $('.banner_slick-slider').slick({
+    autoplay: true,
+    autoplaySpeed: 3001,
+    infinite: true,
+  })
   //слайдер в секции Today's
   $('.today__slick-carousel').slick({
     dots: false,
@@ -137,16 +143,16 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   })
-  $(".slick_vertical_container").slick({
+  $('.slick_vertical_container').slick({
     infinite: true,
-    vertical:true,
-    verticalSwiping:true,
+    vertical: true,
+    verticalSwiping: true,
     slidesToShow: 4,
     slidesToScroll: 4,
     arrows: true,
     nextArrow: $('.vertical-slider-btn.down'),
     prevArrow: $('.vertical-slider-btn.up'),
-})
+  })
 
   $('#subSlider').slick({
     infinite: true,
@@ -154,8 +160,4 @@ $(document).ready(function () {
     nextArrow: $('.vertical-slider-btn.right'),
     prevArrow: $('.vertical-slider-btn.left'),
   })
-
 })
-
-
-
