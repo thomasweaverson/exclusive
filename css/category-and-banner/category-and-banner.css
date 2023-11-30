@@ -71,6 +71,7 @@
   right: -185px;
   background-color: #ffffff;
   box-shadow: 1px 0px 6px 1px #aaa;
+  z-index: 1;
 }
 
 .dropdown-content.man {
@@ -80,6 +81,7 @@
   right: -157px;
   background-color: #ffffff;
   box-shadow: 1px 0px 6px 1px #aaa;
+  z-index: 1;
 }
 
 .category .dropdown-content a {
@@ -124,7 +126,7 @@
   display: grid;
   height: 344px;
   grid-template-columns: 64px 1fr 496px;
-  grid-template-rows: 319px 1fr;
+  grid-template-rows: 344px;
 }
 
 .banner__promo {
@@ -133,7 +135,23 @@
 
 .banner__img {
   grid-column: 3 / 4;
+  display: flex;
+  align-items: center;
 }
+
+.banner__img.haier {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.banner__img>img {
+  margin: 0 auto;
+  width: 100%;
+  max-width: fit-content;
+  max-height: 344px;
+}
+
+
 
 .banner__promo>div>span {
   font-family: 'Poppins', sans-serif;
@@ -163,6 +181,10 @@
   margin: 20px 0 0 0;
 }
 
+.banner__promo.samsung>p:first-of-type {
+  font-size: 40px;
+}
+
 .banner__promo>p>a {
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -190,6 +212,11 @@
   position: relative;
   top: 8px;
 }
+
+.banner__promo a > img {
+  display: unset;
+}
+
 
 /*!banner selectors*/
 .banner__selectors {
@@ -311,9 +338,10 @@
 
   .category-and-banner {
     display: grid;
-    grid-template-columns: 185px 1fr;
+    grid-template-columns: 185px calc(100vw - 210px);
     grid-gap: 10px;
-    justify-content: space-between;
+    justify-content: start;
+    overflow: hidden;
   }
 
   .banner {
@@ -321,8 +349,8 @@
     background-color: #000;
     display: grid;
     height: fit-content;
-    grid-template-columns: 1fr 10fr 16fr;
-    grid-template-rows: 1fr 24px;
+    grid-template-columns: 2fr 160px 16fr;
+    grid-template-rows: 344px;
   }
 
   .banner__promo {
@@ -332,6 +360,17 @@
 
   .banner__img {
     grid-column: 3 / 4;
+    display: flex;
+    align-items: center;
+  }
+  .banner__img>img{
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .banner__img.gpu>img{
+    width: 100%;
+    max-width:fit-content;
   }
 
   .banner__promo>div {
@@ -339,6 +378,7 @@
     display: grid;
     grid-template-columns: 40px 1fr;
     grid-gap: 24px;
+    z-index: 2;
   }
 
   .banner__promo>p:first-of-type {
@@ -351,13 +391,9 @@
     margin: 20px 0 0 0;
   }
 
-  .banner__img {
-    align-self: center;
-  }
-
-  .banner__img>img {
+  /* .banner__img>img {
     width: 86%;
-  }
+  } */
 
   .banner__selectors {
     grid-column: 1 / span 3;
@@ -386,9 +422,10 @@
 
   .category-and-banner {
     display: grid;
-    grid-template-columns: 185px 1fr;
+    grid-template-columns: 185px calc(100vw - 215px);
     grid-gap: 5px;
-    justify-content: space-between;
+    justify-content: start;
+    overflow: hidden;
   }
 
   .banner {
@@ -396,11 +433,21 @@
     background-color: #000;
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height: 344px;
   }
 
   .banner__img {
     order: -1;
+    height: 50%;
+  }
+  
+  .banner__img.haier {
+    height: 70%;
+  }
+
+  .banner__img>img {
+    height: 90%;
+    width: min-content;
   }
 
   .banner__promo>div {
@@ -424,6 +471,17 @@
     text-align: center;
   }
 
+  .banner__promo.samsung>p:first-of-type {
+    font-size: 31px; 
+  }
+  .banner__promo.samsung>p:first-of-type>br {
+    display: block;
+  }
+
+  .banner__promo.haier>p:first-of-type {
+    font-size: 20px;
+  }
+
   .banner__promo>p:first-of-type>br {
     display: none;
   }
@@ -439,14 +497,11 @@
   }
 
   .banner__selectors {
-
     display: flex;
     gap: 11px;
     margin: 30px auto 0 auto;
   }
-
 }
-
 
 /*!media <460*/
 @media screen and (max-width: 459px) {
@@ -460,11 +515,13 @@
     width: 170px;
   }
 
+.category-and-banner {
+  overflow: hidden;
+}
 
 .category-and-banner .category>ul {
   position: relative;
 }
-
 
   .dropdown-content.woman {
     display: none;
@@ -486,7 +543,6 @@
 
   .category-and-banner {
     display: block;
-
   }
 
   .banner {
@@ -495,10 +551,21 @@
     display: flex;
     flex-direction: column;
     height: fit-content;
+    height: 350px;
   }
 
   .banner__img {
     order: -1;
+    height: 50%;
+  }
+
+  .banner__img.haier {
+    height: 70%;
+  }
+
+  .banner__img>img {
+    padding-top: 10px;
+    height: 100%;
   }
 
   .banner__promo>div {
@@ -521,6 +588,14 @@
     text-align: center;
   }
 
+  .banner__promo.samsung>p:first-of-type {
+    font-size: 31px;
+  }
+
+  .banner__promo.samsung>p:first-of-type>br {
+    display: block;
+  }
+
   .banner__promo>p:first-of-type>br {
     display: none;
   }
@@ -536,11 +611,8 @@
   }
 
   .banner__selectors {
-
     display: flex;
     gap: 11px;
     margin: 30px auto 0 auto;
   }
-
-
 }
