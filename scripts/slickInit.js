@@ -7,7 +7,7 @@ $(document).ready(function () {
     infinite: true,
     dots: true,
     customPaging : function(slider, i) {
-      return '<a href="#"><img src="../img/banner_slider/banner_slider_dot.svg" /><img src="../img/banner_slider/banner_slider_dot_active.svg" /></a>';
+      return '<a href="#"><img src="./img/banner_slider/banner_slider_dot.svg" /><img src="./img/banner_slider/banner_slider_dot_active.svg" /></a>';
   },
   })
   //слайдер в секции Today's
