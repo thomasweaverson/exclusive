@@ -5,8 +5,6 @@
 
 [Ссылка на макет Figma](https://www.figma.com/file/CKU9jwQoE2ETZr7rrv4ObZ/Full-E-Commerce-Website-UI-UX-Design-(Community))
 
-**Ширина макета** - 1440
-
 ### Адаптивность - разработана на усмотрение исполнителя.
 
 ### =============================================
