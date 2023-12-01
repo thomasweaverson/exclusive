@@ -18,7 +18,6 @@
 }
 
 @media screen and (min-width: 111px) and (max-width: 750px) {
-
   .section-contact__flex-wrapper {
     display: flex;
     gap: 30px;
@@ -27,7 +26,7 @@
   }
 
   div.section-contact__contact {
-    max-width: 340px; 
+    max-width: 340px;
     min-width: unset;
     width: 100%;
     margin-left: auto;
@@ -39,7 +38,7 @@
 /*!contact area*/
 .section-contact__contact {
   min-width: 340px;
-  box-shadow: 0px 1px 13px 0px #0000000D;
+  box-shadow: 0px 1px 13px 0px #0000000d;
   padding: 40px 35px 51px 35px;
 }
 
@@ -73,7 +72,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #DB4444;
+  background-color: #db4444;
 }
 
 .section-contact__contact h2 {
@@ -98,8 +97,7 @@
 
 .section-contact__contact p:last-of-type {
   margin: 0;
-} 
-
+}
 
 .section-contact__contact a {
   text-decoration: none;
@@ -108,12 +106,10 @@
 
 /*!contact area END*/
 
-
-
 /*!feedback form area*/
 
 .section-contact__feedback-form {
-  box-shadow: 0px 1px 13px 0px #0000000D;
+  box-shadow: 0px 1px 13px 0px #0000000d;
   padding: 40px 32px 40px 31px;
   width: 100%;
 }
@@ -125,13 +121,13 @@
   margin-bottom: 32px;
 }
 
-.section-contact__feedback-form_inputs-flex-wrapper input, 
-.section-contact__feedback-form textarea  {
+.section-contact__feedback-form_inputs-flex-wrapper input,
+.section-contact__feedback-form textarea {
   height: 50px;
   width: 100%;
   outline: none;
   border: none;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 4px;
   padding-left: 16px;
 
@@ -154,14 +150,16 @@
   font-weight: 400;
   line-height: 24px;
 
-  color: #E89D9D;
+  color: #e89d9d;
 
   position: absolute;
   top: 13px;
   display: none;
 }
 
-.section-contact__feedback-form_inputs-flex-wrapper input:placeholder-shown+.star-crutch {
+.section-contact__feedback-form_inputs-flex-wrapper
+  input:placeholder-shown
+  + .star-crutch {
   display: block;
 }
 
@@ -177,7 +175,7 @@
 .section-contact__feedback-form_input-email {
   display: inline-block;
   position: relative;
-  width: 100%
+  width: 100%;
 }
 .section-contact__feedback-form_input-email .star-crutch {
   left: 103px;
@@ -186,7 +184,7 @@
 .section-contact__feedback-form_input-tel {
   display: inline-block;
   position: relative;
-  width: 100%
+  width: 100%;
 }
 .section-contact__feedback-form_input-tel .star-crutch {
   left: 108px;
@@ -194,23 +192,21 @@
 
 @media screen and (max-width: 1020px) {
   .section-contact__feedback-form_inputs-flex-wrapper {
-flex-direction: column;
+    flex-direction: column;
   }
   .section-contact__feedback-form {
     padding: 15px 10px;
-    }
+  }
 
-    .catalog_list.contacts-page {
-      margin: 20px 0;
-    }
-  
+  .catalog_list.contacts-page {
+    margin: 20px 0;
+  }
 
   .section-contact {
     margin-top: 20px;
     margin-bottom: 40px;
   }
 }
-
 
 .section-contact__feedback-form button.red-btn {
   display: block;

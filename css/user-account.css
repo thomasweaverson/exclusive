@@ -15,7 +15,6 @@
   justify-content: space-between;
 }
 
-
 /*!Menu*/
 .account-menu ul {
   list-style: none;
@@ -29,9 +28,8 @@
 }
 
 .acc-module_user_section-user-account {
-  background: no-repeat center url(../img/acc-user_fix.svg) #DB4444;
+  background: no-repeat center url(../img/acc-user_fix.svg) #db4444;
 }
-
 
 .account-menu__heading {
   font-family: 'Poppins', sans-serif;
@@ -40,7 +38,6 @@
   line-height: 24px;
 
   margin: 24px 0 16px 0;
-
 }
 
 .account-menu__heading a,
@@ -48,8 +45,6 @@
   text-decoration: none;
   color: #000;
 }
-
-
 
 .account-menu__item {
   font-family: 'Poppins', sans-serif;
@@ -59,7 +54,6 @@
   opacity: 49.7%;
   text-indent: 35px;
   margin: 8px 0;
-
 }
 
 .account-menu__item.account-menu__item_active {
@@ -67,7 +61,7 @@
 }
 
 a.account-menu__item_active {
-  color: #DB4444;
+  color: #db4444;
 }
 
 /*!Menu END*/
@@ -77,13 +71,13 @@ a.account-menu__item_active {
   width: 100%;
   max-width: 870px;
 
-  box-shadow: 0px 1px 13px 0px #0000000D;
+  box-shadow: 0px 1px 13px 0px #0000000d;
 
   padding: 40px 80px;
 }
 
 .section-edit-profile__form_heading {
-  color: #DB4444;
+  color: #db4444;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -125,16 +119,13 @@ a.account-menu__item_active {
   outline: none;
 
   border: none;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 4px;
-
 }
 
-
-.section-edit-profile__form input[type="password"] {
+.section-edit-profile__form input[type='password'] {
   margin-bottom: 16px;
 }
-
 
 .section-edit-profile__form_btn-flex-conteiner {
   height: 56px;
@@ -159,7 +150,6 @@ a.account-menu__item_active {
 }
 
 /*!Form END*/
-
 
 /*!media 720-1000*/
 
@@ -192,7 +182,6 @@ a.account-menu__item_active {
   .account-menu__item {
     text-indent: 15px;
     margin: 4px 0;
-
   }
 
   .section-edit-profile__form {

@@ -1,9 +1,8 @@
 .section-our-products {
   max-width: 1170px;
   margin: 71px auto 140px auto;
-overflow: hidden;
+  overflow: hidden;
 }
-
 
 .section-our-products__header_grid {
   display: grid;
@@ -24,11 +23,9 @@ overflow: hidden;
   flex-direction: row;
 }
 
-
 .section-our-products .product__name {
   min-width: 270px;
 }
-
 
 .section-our-products .product__description .product__prices,
 .section-our-products .product__description .product__rating {
@@ -37,8 +34,8 @@ overflow: hidden;
 }
 
 .section-our-products .product__description .product__rating {
-position: relative;
-bottom: 2px;
+  position: relative;
+  bottom: 2px;
 }
 
 .section-our-products .product__discount {
@@ -48,16 +45,10 @@ bottom: 2px;
 
 /*secondary goods container*/
 .section-our-products .goods_container.secondary {
-margin-top: 57px;
+  margin-top: 57px;
 }
 
 /*secondary goods container END*/
-
-
-
-
-
-
 
 /*!media  (max-width: 1200px)*/
 @media screen and (max-width: 1200px) {

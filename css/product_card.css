@@ -298,7 +298,6 @@
 @media screen and (max-width: 329px) {
   .product {
     max-width: 270px;
-    /* width: 100%; */
   }
 
   .product__card_grid {
@@ -331,11 +330,11 @@
 .product_color-selector_turquoise-green,
 .product_color-selector_orange,
 .product_color-selector_deep-yellow,
-.product_color-selector_swamp, 
+.product_color-selector_swamp,
 .product_color-selector_white,
 .product_color-selector_brown,
 .product_color-selector_dark-blue,
-.product_color-selector_dark-red, 
+.product_color-selector_dark-red,
 .product_color-selector_niagara,
 .product_color-selector_lime {
   width: 20px;
@@ -394,7 +393,7 @@
 }
 
 .product_color-selector_niagara {
-  background-color: #94B2B9;
+  background-color: #94b2b9;
 }
 
 .product_color-selector_carmine-pink {

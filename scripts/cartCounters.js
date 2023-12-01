@@ -48,10 +48,8 @@ decBtnLCDMonitor.addEventListener('click', function () {
   refreshTotal()
 })
 
-
 incBtnH1Gamepad.addEventListener('click', function () {
-  let currentQuantity =
-    document.getElementById('quantityH1Gamepad').textContent
+  let currentQuantity = document.getElementById('quantityH1Gamepad').textContent
   if (parseInt(currentQuantity) < 9) {
     document.getElementById('quantityH1Gamepad').textContent =
       '0' + (parseInt(currentQuantity) + 1)
@@ -69,8 +67,7 @@ incBtnH1Gamepad.addEventListener('click', function () {
 })
 
 decBtnH1Gamepad.addEventListener('click', function () {
-  let currentQuantity =
-    document.getElementById('quantityH1Gamepad').textContent
+  let currentQuantity = document.getElementById('quantityH1Gamepad').textContent
   if (parseInt(currentQuantity) > 1) {
     if (parseInt(currentQuantity) <= 10) {
       document.getElementById('quantityH1Gamepad').textContent =
@@ -90,18 +87,21 @@ decBtnH1Gamepad.addEventListener('click', function () {
   refreshTotal()
 })
 
-
-
-
-
-
 function changeSubTotal(quantity, where, basePrice) {
   where.textContent = `$${quantity * basePrice}`
 }
 function refreshTotal() {
-  let subtotalLCDMonitor = parseInt(document.getElementById('quantityLCDMonitor').textContent) * basePriceLCDMonitor
-  let subTotalH1Gamepad = parseInt(document.getElementById('quantityH1Gamepad').textContent) * basePriceH1Gamepad
+  let subtotalLCDMonitor =
+    parseInt(document.getElementById('quantityLCDMonitor').textContent) *
+    basePriceLCDMonitor
+  let subTotalH1Gamepad =
+    parseInt(document.getElementById('quantityH1Gamepad').textContent) *
+    basePriceH1Gamepad
   let sum = subtotalLCDMonitor + subTotalH1Gamepad
-  document.querySelector(".section-cart__total_subtotal").firstElementChild.nextElementSibling.textContent = sum
-  document.querySelector(".section-cart__total_total").firstElementChild.nextElementSibling.textContent = sum
+  document.querySelector(
+    '.section-cart__total_subtotal'
+  ).firstElementChild.nextElementSibling.textContent = sum
+  document.querySelector(
+    '.section-cart__total_total'
+  ).firstElementChild.nextElementSibling.textContent = sum
 }
