@@ -1,15 +1,16 @@
-Описание макета сайта
+# Exclusive - shop
+## Описание макета сайта
 
-Ширина макета 1440
+**Ширина макета 1440**
 
-Ссылка на макет - https://www.figma.com/file/CKU9jwQoE2ETZr7rrv4ObZ/Full-E-Commerce-Website-UI-UX-Design-(Community)
+[Ссылка на макет Figma](https://www.figma.com/file/CKU9jwQoE2ETZr7rrv4ObZ/Full-E-Commerce-Website-UI-UX-Design-(Community))
 
-Ширина макета 1440
+**Ширина макета** - 1440
 
-Адаптивность - разработана на усмотрение автора.
+### Адаптивность - разработана на усмотрение исполнителя.
 
-
-https://thomasweaverson.github.io/exclusive/ - главная страница
+### =============================================
+[Главная страница](https://thomasweaverson.github.io/exclusive/)
 
 Реализовано:
   - dropdown выбор языка
@@ -18,48 +19,51 @@ https://thomasweaverson.github.io/exclusive/ - главная страница
   - нажатие на значок "добавить в избранное"
   - некоторые hover
   - выбор цвета продукта в секции Our Products
+  - слайдер баннеров JQuery slick-slider
+  - слайдеры товаров JQuery slick-slider
+  - обратный отсчёт акций JS
 
   Из главной страницы можно перейти по следующим ссылкам:
-  - Контакты
+  - Contact
   - About
   - Sign Up
   - Manage My Account в выпадающем меню (значок пользователя)
-  - Избранное (значок сердце)
-  - Корзина (значок тележка) 
+  - Wishlist (значок сердце в хедере)
+  - Cart (значок тележка в хедере) 
   - на страницу товара по ссылке из любой карточки товара, или по ссылкам баннеров
   
-
-https://thomasweaverson.github.io/exclusive/signup.html - страница регистрации
+### =============================================
+[Cтраница регистрации](https://thomasweaverson.github.io/exclusive/signup.html)
 
 Можно перейти на страницу Log In по ссылке внизу страницы
 
 
 
-https://thomasweaverson.github.io/exclusive/login.html - страница входа в аккаунт
+[Cтраница входа в аккаунт](https://thomasweaverson.github.io/exclusive/login.html)
 
-https://thomasweaverson.github.io/exclusive/wishlist.html - страница с избранными товарами
+[Cтраница с избранными товарами](https://thomasweaverson.github.io/exclusive/wishlist.html)
 
-
-https://thomasweaverson.github.io/exclusive/cart.html - страница Корзина
-
-По кнопке Procees to checkout - можно перейти на страницу Checkout
-
+[Страница Корзина](https://thomasweaverson.github.io/exclusive/cart.html)
+- Можно изменять количество товара, что пересчитывает предварительную и окончательную сумму. JS
+- По кнопке Proceed to checkout - можно перейти на страницу Checkout
 
 
-https://thomasweaverson.github.io/exclusive/checkout.html - страница проверки заказа
+[Страница проверки заказа](https://thomasweaverson.github.io/exclusive/checkout.html)
 
 
-
-https://thomasweaverson.github.io/exclusive/user-account.html - страница управления аккаунтом
-
-
-https://thomasweaverson.github.io/exclusive/about.html - страница About
+[Страница управления аккаунтом](https://thomasweaverson.github.io/exclusive/user-account.html)
 
 
-https://thomasweaverson.github.io/exclusive/contacts.html - страница Контакты
+[Страница About](https://thomasweaverson.github.io/exclusive/about.html)
 
 
-https://thomasweaverson.github.io/exclusive/404.html - 404 страница
+[Страница Контакты](https://thomasweaverson.github.io/exclusive/contacts.html)
 
 
-https://thomasweaverson.github.io/exclusive/product0017.html - страница товара
+[404 страница](https://thomasweaverson.github.io/exclusive/404.html)
+
+
+[Страница товара](https://thomasweaverson.github.io/exclusive/product0017.html)
+- реализована фотогалерея товара. JQuery slick-slider + JS
+- изменение количества товара
+- выбор размера, цвета, отметка - избранное
