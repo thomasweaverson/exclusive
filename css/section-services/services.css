@@ -34,7 +34,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
-  
+
   text-align: center;
   margin: 24px 0 8px 0;
   padding: 0;
@@ -53,11 +53,11 @@
 .section-services__flex-wrapper {
   display: flex;
   justify-content: center;
-  gap: 88px; 
+  gap: 88px;
 }
 
 .section-services__delivery {
-flex-basis: 249px;
+  flex-basis: 249px;
 }
 
 .section-services__support {
@@ -68,14 +68,12 @@ flex-basis: 249px;
   flex-basis: 256px;
 }
 
-
-
 /*!media 580-980px*/
 @media screen and (min-width: 580px) and (max-width: 980px) {
   .section-services__flex-wrapper {
     display: flex;
     justify-content: space-evenly;
-    gap: 30px; 
+    gap: 30px;
   }
 }
 
@@ -85,6 +83,6 @@ flex-basis: 249px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 50px; 
+    gap: 50px;
   }
 }

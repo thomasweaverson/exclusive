@@ -1,222 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusive shop - educational layout by Serg Garden</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exclusive shop - educational layout by Serg Garden</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/header/header.css" />
+    <link rel="stylesheet" href="css/header/header__sign_mod.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+    <link rel="stylesheet" href="css/footer/footer.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/header/header.css">
-  <link rel="stylesheet" href="css/header/header__sign_mod.css">
-  <link rel="stylesheet" href="css/sign.css">
-  <link rel="stylesheet" href="css/footer/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/exclusiveJQ.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/d31cff1d68.js"
+      crossorigin="anonymous"></script>
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="scripts/exclusiveJQ.js" defer></script>
-  <script src="https://kit.fontawesome.com/d31cff1d68.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-
-  <header>
-    <div class="subheading-wrapper">
-      <div class="container subheading">
-        <div class="lang_dropdown">
-          <div class="langDropdown_current">English</div>
-          <div class="dropdown-btn">
-            <img src="img/dropdown-btn.svg" alt="icon dropdown" />
+  <body>
+    <header>
+      <div class="subheading-wrapper">
+        <div class="container subheading">
+          <div class="lang_dropdown">
+            <div class="langDropdown_current">English</div>
+            <div class="dropdown-btn">
+              <img src="img/dropdown-btn.svg" alt="icon dropdown" />
+            </div>
+            <div class="lang_dropdown-options">
+              <div class="language">English</div>
+              <div class="language">Russian</div>
+              <div class="language">Uzbek</div>
+              <div class="language">French</div>
+            </div>
           </div>
-          <div class="lang_dropdown-options">
-            <div class="language">English</div>
-            <div class="language">Russian</div>
-            <div class="language">Uzbek</div>
-            <div class="language">French</div>
-          </div>
+          <p>
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF
+            50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
+          </p>
         </div>
-        <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!&nbsp;&nbsp;&nbsp;<a href="#">ShopNow</a>
-        </p>
       </div>
-    </div>
-    <div class="heading">
-      <div class="container heading__grid">
-        <div class="logo">
-          <h1 class="brand">Exclusive</h1>
-        </div>
-        <div class="heading__menu">
-          <ul class="heading__links_flex">
-            <li class="heading__link"><a href="index.html">Home</a></li>
-            <li class="heading__link"><a href="contacts.html">Contact</a></li>
-            <li class="heading__link"><a href="about.html">About</a></li>
-            <li class="heading__link"><a href="signup.html">Sign Up</a></li>
-          </ul>
-        </div>
-        <div class="search-box-and-acc-module">
-          <div class="search-container">
-            <input class="search-box" type="search" name="search" placeholder="What are you looking for?">
-            <button class="search-button"><img src="img/search-glass.svg" alt="search glass"></button>
+      <div class="heading">
+        <div class="container heading__grid">
+          <div class="logo">
+            <h1 class="brand">Exclusive</h1>
           </div>
-          <div class="acc-module-container-wrapper">
-            <div class="acc-module-container">
-              <button onclick="document.location='wishlist.html'" class="acc-module_wishlist"></button>
-              <button class="acc-module_cart"></button>
-              <button onclick="dropdownUser()" class="acc-module_user dropdown"></button>
-              <div id="dropdown-user" class="user-dropdown-content" style="display: none;">
-                <div class="dropdown-user-container">
-                  <a href="user-account.html">
-                    <div
-                      class="dropdown-user__menu-item_manage-account dropdown-user__menu-item"
-                    >
-                      <img src="img/acc-user.svg" alt="icon account" /><span
-                        >Manage My Account</span
-                      >
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-mallbag.svg"
-                        alt="mallbag"
-                      /><span>My Order</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-cancel.svg"
-                        alt="Cancellations"
-                      /><span>My Cancellations</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-reviews.svg"
-                        alt="reviews"
-                      /><span>My Reviews</span>
-                    </div>
-                  </a>
-                  <a href="#">
-                    <div class="dropdown-user__menu-item">
-                      <img
-                        src="img/dropdown-user-logout.svg"
-                        alt="logout"
-                      /><span>Logout</span>
-                    </div>
-                  </a>
+          <div class="heading__menu">
+            <ul class="heading__links_flex">
+              <li class="heading__link"><a href="index.html">Home</a></li>
+              <li class="heading__link"><a href="contacts.html">Contact</a></li>
+              <li class="heading__link"><a href="about.html">About</a></li>
+              <li class="heading__link"><a href="signup.html">Sign Up</a></li>
+            </ul>
+          </div>
+          <div class="search-box-and-acc-module">
+            <div class="search-container">
+              <input
+                class="search-box"
+                type="search"
+                name="search"
+                placeholder="What are you looking for?" />
+              <button class="search-button">
+                <img src="img/search-glass.svg" alt="search glass" />
+              </button>
+            </div>
+            <div class="acc-module-container-wrapper">
+              <div class="acc-module-container">
+                <button
+                  onclick="document.location='wishlist.html'"
+                  class="acc-module_wishlist"></button>
+                <button class="acc-module_cart"></button>
+                <button
+                  onclick="dropdownUser()"
+                  class="acc-module_user dropdown"></button>
+                <div
+                  id="dropdown-user"
+                  class="user-dropdown-content"
+                  style="display: none">
+                  <div class="dropdown-user-container">
+                    <a href="user-account.html">
+                      <div
+                        class="dropdown-user__menu-item_manage-account dropdown-user__menu-item">
+                        <img src="img/acc-user.svg" alt="icon account" /><span
+                          >Manage My Account</span
+                        >
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-mallbag.svg"
+                          alt="mallbag" /><span>My Order</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-cancel.svg"
+                          alt="Cancellations" /><span>My Cancellations</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-reviews.svg"
+                          alt="reviews" /><span>My Reviews</span>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="dropdown-user__menu-item">
+                        <img
+                          src="img/dropdown-user-logout.svg"
+                          alt="logout" /><span>Logout</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-
-          </div>
-
-        </div>
-      </div>
-
-
-    </div>
-  </header>
-  <div class="divider"></div>
-  <main>
-    <section class="sign">
-      <div class="sign__container">
-        <div class="sign__grid-container">
-          <div class="sign__bg-container">
-            <img src="img/sign/sign_bg.png" alt="" class="sign__bg">
-          </div>
-          <div class="blank"></div>
-          <div class="sign__form">
-            <h3 class="sign__heading">Log in to Exclusive</h3>
-            <p class="sign__text">Enter your details below</p>
-
-            <form action="#" name="login__form" method="post">
-              <input type="text" class="login__email-phone" required  placeholder="Email or Phone Number" />
-              <input type="password" class="login__password" required placeholder="Password" />
-              
-              <div class="sign__form_login-btn-forget-container">
-                <button class="red-btn"><span>Log In</span></button>
-                <a href="#">Forget Password?</a>
-              </div>
-
-            </form>
-            
           </div>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="footer__container-flex-grid">
+    </header>
+    <div class="divider"></div>
+    <main>
+      <section class="sign">
+        <div class="sign__container">
+          <div class="sign__grid-container">
+            <div class="sign__bg-container">
+              <img src="img/sign/sign_bg.png" alt="" class="sign__bg" />
+            </div>
+            <div class="blank"></div>
+            <div class="sign__form">
+              <h3 class="sign__heading">Log in to Exclusive</h3>
+              <p class="sign__text">Enter your details below</p>
 
-      <div class="footer__subscribe">
-        <div class="logo">
-          <h1 class="brand">Exclusive</h1>
+              <form action="#" name="login__form" method="post">
+                <input
+                  type="text"
+                  class="login__email-phone"
+                  required
+                  placeholder="Email or Phone Number" />
+                <input
+                  type="password"
+                  class="login__password"
+                  required
+                  placeholder="Password" />
+
+                <div class="sign__form_login-btn-forget-container">
+                  <button class="red-btn"><span>Log In</span></button>
+                  <a href="#">Forget Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
-        <h2 class="footer__item-heading">Subscribe</h2>
-        <p class="footer__link">Get 10% off your first order</p>
-        <div class="footer__subscribe_form-container">
-          <input type="text" class="footer__subscribe_input" placeholder="Enter your email" name="mail" required>
-          <button type="submit" name="submit-btn" class="footer__subscribe_submit-btn"><img
-              src="img/footer/icon-send.svg" alt="submit button"></button>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container-flex-grid">
+        <div class="footer__subscribe">
+          <div class="logo">
+            <h1 class="brand">Exclusive</h1>
+          </div>
+          <h2 class="footer__item-heading">Subscribe</h2>
+          <p class="footer__link">Get 10% off your first order</p>
+          <div class="footer__subscribe_form-container">
+            <input
+              type="text"
+              class="footer__subscribe_input"
+              placeholder="Enter your email"
+              name="mail"
+              required />
+            <button
+              type="submit"
+              name="submit-btn"
+              class="footer__subscribe_submit-btn">
+              <img src="img/footer/icon-send.svg" alt="submit button" />
+            </button>
+          </div>
+        </div>
+
+        <div class="footer__support">
+          <h2 class="footer__item-heading">Support</h2>
+          <p class="footer__link">
+            111 Bijoy sarani, Dhaka,<br />
+            DH 1515, Bangladesh.
+          </p>
+          <p class="footer__link">
+            <a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a>
+          </p>
+          <p class="footer__link">
+            <a href="tel:+88015888889999">+88015-88888-9999</a>
+          </p>
+        </div>
+
+        <div class="footer__account">
+          <h2 class="footer__item-heading">Account</h2>
+          <p class="footer__link"><a href="user-account.html">My Account</a></p>
+          <p class="footer__link"><a href="signup.html">Login / Register</a></p>
+          <p class="footer__link"><a href="cart.html">Cart</a></p>
+          <p class="footer__link"><a href="wishlist.html">Wishlist</a></p>
+          <p class="footer__link"><a href="index.html">Shop</a></p>
+        </div>
+
+        <div class="footer__quick-link">
+          <h2 class="footer__item-heading">Quick Link</h2>
+          <p class="footer__link"><a href="#bottom">Privacy Policy</a></p>
+          <p class="footer__link"><a href="#">Terms Of Use</a></p>
+          <p class="footer__link"><a href="#">FAQ</a></p>
+          <p class="footer__link"><a href="contacts.html">Contact</a></p>
+        </div>
+
+        <div class="footer__download-app">
+          <h2 class="footer__item-heading">Download App</h2>
+          <p class="footer__text">Save $3 with App New User Only</p>
+          <div class="footer__download-links_grid-container">
+            <div class="footer__download-app_qrcode">
+              <img
+                src="img/footer/footer-download_qrcode.svg"
+                alt="download qr code" />
+            </div>
+            <div class="footer_download-app_google-play">
+              <img
+                src="img/footer/footer-download_google-play.png"
+                alt="google play market" />
+            </div>
+            <div class="footer_download-app_apple-store">
+              <img
+                src="img/footer/footer-download_apple-store.png"
+                alt="apple store" />
+            </div>
+          </div>
+          <div class="footer__social_flex-container">
+            <img src="img/footer/Icon-Facebook.svg" alt="facebook" />
+            <img src="img/footer/Icon-Twitter.png" alt="twitter" />
+            <img src="img/footer/icon-instagram.svg" alt="instagram" />
+            <img src="img/footer/Icon-Linkedin.svg" alt="linked in" />
+          </div>
         </div>
       </div>
-
-
-      <div class="footer__support">
-        <h2 class="footer__item-heading">Support</h2>
-        <p class="footer__link">111 Bijoy sarani, Dhaka,<br> DH 1515, Bangladesh.</p>
-        <p class="footer__link"><a href="mailto:exclusive@gmail.com">exclusive@gmail.com</a></p>
-        <p class="footer__link"><a href="tel:+88015888889999">+88015-88888-9999</a></p>
+      <div class="divider divider-footer"></div>
+      <div class="footer__cellar">
+        <img src="img/footer/icon-copyright.svg" alt="copyright" />
+        <span>Copyright Rimel 2022.</span>
+        <span>All right reserved</span>
       </div>
-
-
-      <div class="footer__account">
-        <h2 class="footer__item-heading">Account</h2>
-        <p class="footer__link"><a href="user-account.html">My Account</a></p>
-        <p class="footer__link"><a href="signup.html">Login / Register</a></p>
-        <p class="footer__link"><a href="cart.html">Cart</a></p>
-        <p class="footer__link"><a href="wishlist.html">Wishlist</a></p>
-        <p class="footer__link"><a href="index.html">Shop</a></p>
-      </div>
-
-
-      <div class="footer__quick-link">
-        <h2 class="footer__item-heading">Quick Link</h2>
-        <p class="footer__link"><a href="#bottom">Privacy Policy</a></p>
-        <p class="footer__link"><a href="#">Terms Of Use</a></p>
-        <p class="footer__link"><a href="#">FAQ</a></p>
-        <p class="footer__link"><a href="contacts.html">Contact</a></p>
-      </div>
-
-      <div class="footer__download-app">
-        <h2 class="footer__item-heading">Download App</h2>
-        <p class="footer__text">Save $3 with App New User Only</p>
-        <div class="footer__download-links_grid-container">
-          <div class="footer__download-app_qrcode"><img src="img/footer/footer-download_qrcode.svg"
-              alt="download qr code"></div>
-          <div class="footer_download-app_google-play"><img src="img/footer/footer-download_google-play.png"
-              alt="google play market"></div>
-          <div class="footer_download-app_apple-store"><img src="img/footer/footer-download_apple-store.png"
-              alt="apple store"></div>
-        </div>
-        <div class="footer__social_flex-container">
-          <img src="img/footer/Icon-Facebook.svg" alt="facebook">
-          <img src="img/footer/Icon-Twitter.png" alt="twitter">
-          <img src="img/footer/icon-instagram.svg" alt="instagram">
-          <img src="img/footer/Icon-Linkedin.svg" alt="linked in">
-        </div>
-      </div>
-
-    </div>
-    <div class="divider divider-footer"></div>
-    <div class="footer__cellar">
-      <img src="img/footer/icon-copyright.svg" alt="copyright">
-      <span>Copyright Rimel 2022.</span>
-      <span>All right reserved</span>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

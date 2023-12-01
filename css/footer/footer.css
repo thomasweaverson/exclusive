@@ -39,8 +39,6 @@
   min-width: 198px;
 }
 
-
-
 .footer__container-flex-grid .logo {
   margin-bottom: 24px;
 }
@@ -68,7 +66,6 @@
   color: inherit;
 }
 
-
 .footer__container-flex-grid .footer__text {
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
@@ -79,7 +76,6 @@
 
   margin: 8px 0 11px 0;
 }
-
 
 /*!subscribe form*/
 
@@ -92,7 +88,7 @@
   height: 48px;
 }
 
-.footer__container-flex-grid input[type="text"] {
+.footer__container-flex-grid input[type='text'] {
   width: 74%;
   height: 100%;
   background-color: transparent;
@@ -102,21 +98,18 @@
   display: inline-block;
   padding-left: 14.5px;
 
-
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: #fafafa;
-
 }
 
-.footer__container-flex-grid input[type="text"]:focus {
+.footer__container-flex-grid input[type='text']:focus {
   outline: none;
-
 }
 
-.footer__container-flex-grid button[type="submit"] {
+.footer__container-flex-grid button[type='submit'] {
   display: inline-block;
   position: absolute;
   right: 0;
@@ -130,7 +123,7 @@
   cursor: pointer;
 }
 
-.footer__container-flex-grid button[type="submit"] img {
+.footer__container-flex-grid button[type='submit'] img {
   position: absolute;
   margin: auto;
   top: 0;
@@ -207,12 +200,10 @@
   opacity: 24%;
 }
 
-
 .footer__cellar span {
   margin: 0;
   position: relative;
   top: 7px;
-
 
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
@@ -221,7 +212,7 @@
   letter-spacing: 0em;
   text-align: center;
 
-  color: #3D3D3D;
+  color: #3d3d3d;
 }
 
 /*!cellar END*/
@@ -234,11 +225,10 @@
     gap: 30px;
   }
 
-  .footer__container-flex-grid .logo>h1 {
+  .footer__container-flex-grid .logo > h1 {
     padding: 0;
   }
 }
-
 
 /*!media 640-980px*/
 @media screen and (min-width: 640px) and (max-width: 980px) {
@@ -248,7 +238,7 @@
     gap: 30px;
   }
 
-  .footer__container-flex-grid .logo>h1 {
+  .footer__container-flex-grid .logo > h1 {
     padding: 0;
   }
 }
@@ -261,7 +251,7 @@
     gap: 30px;
   }
 
-  .footer__container-flex-grid .logo>h1 {
+  .footer__container-flex-grid .logo > h1 {
     padding: 0;
   }
 }
@@ -275,7 +265,7 @@
     width: 220px;
   }
 
-  .footer__container-flex-grid .logo>h1 {
+  .footer__container-flex-grid .logo > h1 {
     padding: 0;
   }
 }

@@ -3,7 +3,6 @@
   margin: 70px auto 140px auto;
 }
 
-
 /*!month__header_grid*/
 .section-month__header_grid {
   display: grid;
@@ -26,15 +25,9 @@
 .section-month .goods_container {
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 /*!this month products END*/
-
-
-
-
-
 
 /*!media  from 640px to (max-width: 1200px)*/
 @media screen and (min-width: 640px) and (max-width: 1200px) {
@@ -53,5 +46,4 @@
   .section-month__header_grid {
     grid-template-columns: 1fr;
   }
-
 }

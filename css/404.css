@@ -1,5 +1,4 @@
 .not-found {
-
   font-family: 'Inter', sans-serif;
   font-size: 110px;
   font-weight: 500;
@@ -33,7 +32,6 @@
   margin-bottom: 140px;
 }
 
-
 .page404 {
   max-width: 1170px;
   margin: 0 auto;
@@ -53,7 +51,6 @@
     margin: 20px auto;
   }
 
-
   .not-found_text {
     margin-bottom: 20px;
   }
@@ -67,6 +64,4 @@
   ul.catalog_list.nfpage {
     margin: 20px 0;
   }
-
-
 }
