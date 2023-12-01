@@ -298,7 +298,7 @@
 @media screen and (max-width: 329px) {
   .product {
     max-width: 270px;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .product__card_grid {
